@@ -1,7 +1,10 @@
 import numpy as np
+import flwr as fl
 import torch
-from sklearn.model_selection import train_test_split
+import torch.nn as nn
+import torch.nn.functional as F
 from torch.utils.data import DataLoader,TensorDataset
+from sklearn.model_selection import train_test_split
 
 from Args import args
 
@@ -20,7 +23,7 @@ def load_data(x, y):
     for i in range(len(trains_x)):
         train_loaders.append(get_tensor_loader(trains_x[i], trains_y[i]))
 
-    return train_loaders, test_loader    
+    return train_loaders, test_loader
     
 
 
@@ -30,3 +33,36 @@ def get_tensor_loader(x, y):
     tensor_dataset = TensorDataset(x, y)
     tensor_loader = DataLoader(tensor_dataset, batch_size=args.batch_size, shuffle=True)
     return tensor_loader
+
+
+def train(net, train_loaders, split_id):
+    criterion = nn.CrossEntropyLoss()
+    optimizer = torch.optim.SGD(net.parameters(), lr=args.lr)
+    net.train()
+    
+    for _ in range(args.epochs):
+        for features, labels in train_loaders[split_id]:
+            optimizer.zero_grad()
+            outputs = net(features)
+            loss = criterion(outputs, labels)
+            loss.backward()
+            optimizer.step()
+            
+            
+            
+            
+def test(net, test_loader):
+    criterion = nn.CrossEntropyLoss()
+    correct, total, loss = 0, 0, 0.0
+    net.eval()
+    
+    with torch.no_grad():
+        for features, labels in test_loader:
+            outputs = net(features)
+            loss += criterion(outputs, labels).item()
+            _, predicted = torch.max(outputs.data, 1)
+            total += labels.size(0)
+            correct += (predicted == labels).sum().item()
+    loss /= len(test_loader.dataset)
+    accuracy = correct / total
+    return loss, accuracy
