@@ -1,8 +1,6 @@
 import numpy as np
-import flwr as fl
 import torch
 import torch.nn as nn
-import torch.nn.functional as F
 from torch.utils.data import DataLoader,TensorDataset
 from sklearn.model_selection import train_test_split
 
@@ -35,13 +33,13 @@ def get_tensor_loader(x, y):
     return tensor_loader
 
 
-def train(net, train_loaders, split_id):
+def train(net, train_loader):
     criterion = nn.CrossEntropyLoss()
     optimizer = torch.optim.SGD(net.parameters(), lr=args.lr)
     net.train()
     
     for _ in range(args.epochs):
-        for features, labels in train_loaders[split_id]:
+        for features, labels in train_loader:
             optimizer.zero_grad()
             outputs = net(features)
             loss = criterion(outputs, labels)

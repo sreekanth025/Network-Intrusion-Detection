@@ -7,7 +7,12 @@ class Args:
         self.agent_data_splits = 50
         self.random_state = 42
         self.test_set_size = 0.1
-        self.batch_size=64
+        self.batch_size = 64
+        
+        self.dataset_size = 125973
+        self.num_clients = 2
+        
+        self.num_federated_rounds = (int((self.dataset_size//self.num_clients)*(1-self.test_set_size)))//self.agent_data_splits
         
 args = Args()
 
