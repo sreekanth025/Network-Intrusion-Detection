@@ -18,4 +18,4 @@ class Net(nn.Module):
         x = F.sigmoid(self.fc3(x))
         return x
     
-# Exports: args
+# Exports: Net
