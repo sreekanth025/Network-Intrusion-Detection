@@ -11,7 +11,7 @@ if __name__ == "__main__":
 
     # Start server
     fl.server.start_server(
-        server_address="[::]:8080",
-        config={"num_rounds": args.num_federated_rounds},
+        server_address="0.0.0.0:8080",
+        config={"num_rounds": args.agent_data_splits},
         strategy=strategy,
     )

@@ -29,6 +29,7 @@ def get_tensor_loader(x, y):
     x = torch.from_numpy(np.asarray(x)).float()
     y = torch.from_numpy(np.asarray(y)).float()
     tensor_dataset = TensorDataset(x, y)
+    # tensor_dataset = tensor_dataset.type(torch.LongTensor)
     tensor_loader = DataLoader(tensor_dataset, batch_size=args.batch_size, shuffle=True)
     return tensor_loader
 
@@ -38,10 +39,17 @@ def train(net, train_loader):
     optimizer = torch.optim.SGD(net.parameters(), lr=args.lr)
     net.train()
     
-    for _ in range(args.epochs):
+    for epoch in range(args.epochs):
+        # print('epoch number: ' + str(epoch))
         for features, labels in train_loader:
+            
+            labels = labels.type(torch.LongTensor)
             optimizer.zero_grad()
             outputs = net(features)
+            
+            # print(outputs)
+            # print(labels)
+            
             loss = criterion(outputs, labels)
             loss.backward()
             optimizer.step()
@@ -56,6 +64,7 @@ def test(net, test_loader):
     
     with torch.no_grad():
         for features, labels in test_loader:
+            labels = labels.type(torch.LongTensor)
             outputs = net(features)
             loss += criterion(outputs, labels).item()
             _, predicted = torch.max(outputs.data, 1)

@@ -8,7 +8,9 @@ from sklearn.model_selection import train_test_split
 
 # URL (google drive) of the NSL KDD Dataset (In CSV format)
 download_url = 'https://drive.google.com/uc?id=1dhVPtvCy_F4_qWb2kkaZc6VOqlxW3LVl'
-df = pd.read_csv(download_url)
+# df = pd.read_csv(download_url)
+df = pd.read_csv('data/nsl_kdd.csv')
+
 # print(df.shape)
 # print(df.head())
 
