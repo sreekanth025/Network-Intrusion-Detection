@@ -36,6 +36,11 @@ def client_logic(net, train_loaders, test_loader):
         def evaluate(self, parameters, config):
             self.set_parameters(parameters)
             loss, accuracy = test(net, test_loader)
+            
+            print('Loss: ' + str(loss))
+            print('Accuracy: ' + str(accuracy))
+            print('')
+            
             num_examples = len(test_loader.dataset)
             return float(loss), num_examples, {"accuracy": float(accuracy)}
         
