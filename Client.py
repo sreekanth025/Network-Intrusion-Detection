@@ -3,6 +3,7 @@ import torch
 from collections import OrderedDict
 
 from MyUtils import train, test
+from ReinforcementUtils import reinforcement_train
 
 def client_logic(net, train_loaders, test_loader):
     
@@ -29,7 +30,8 @@ def client_logic(net, train_loaders, test_loader):
             print('Training on data on split id: ' + str(self.split_id))
             self.split_id += 1
             
-            train(net, train_loader)
+            # train(net, train_loader)
+            reinforcement_train(net, train_loader)
             num_examples = len(train_loader.dataset)
             return self.get_parameters(), num_examples, {}
         
