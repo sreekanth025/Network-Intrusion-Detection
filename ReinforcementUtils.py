@@ -1,7 +1,9 @@
 import torch
 import torch.nn as nn
 import numpy as np
+import random
 
+from MyUtils import get_tensor_loader
 from Args import args
 
 def reinforcement_train(net, train_loader):
@@ -10,7 +12,7 @@ def reinforcement_train(net, train_loader):
     optimizer = torch.optim.SGD(net.parameters(), lr=args.lr)
     net.train()
     
-    # memory = []
+    memory = []
     
     for epoch in range(args.epochs):
         for features, labels in train_loader:
@@ -23,21 +25,20 @@ def reinforcement_train(net, train_loader):
             loss.backward()
             optimizer.step()
             
-# =============================================================================
-#             # TODO
-#             memory.append({})
-#         
-#         sample = get_random_sample(memory)
-#         
-#         # Train on the sampled data - Experience replay
-#         for features, labels in sample:
-#             optimizer.zero_grad()
-#             outputs = net(features)
-#             targets = get_targets(outputs, labels)
-#             loss = criterion(outputs, targets)
-#             loss.backward()
-#             optimizer.step()
-# =============================================================================
+            # TODO
+            for feature, label in zip(features, labels):
+                memory.append((feature, label))
+        
+        sample = get_random_sample(memory)
+        
+        # Train on the sampled data - Experience replay
+        for features, labels in sample:
+            optimizer.zero_grad()
+            outputs = net(features)
+            targets = get_targets(outputs, labels)
+            loss = criterion(outputs, targets)
+            loss.backward()
+            optimizer.step()
         
         
 def get_targets(outputs, labels):
@@ -66,9 +67,16 @@ def get_reward(prediction, label):
         return 0
 
 def get_random_sample(memory):
-    sample = None
-    # TODO
-    return sample
+    length = len(memory)
+    sample = random.sample(memory, length//10)
+    
+    features = []
+    labels = []
+    for x, y in sample:
+        features.append(x.detach().cpu().numpy())
+        labels.append(y.detach().cpu().numpy())
+        
+    return get_tensor_loader(features, labels)
 
 
 def get_prioritized_sample(memory):
