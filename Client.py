@@ -6,10 +6,7 @@ from MyUtils import train, test
 from ReinforcementUtils import reinforcement_train
 
 def client_logic(net, train_loaders, test_loader):
-    
-    # TODO
-    # split_id = 0
-    
+        
     class CifarClient(fl.client.NumPyClient):
         
         def __init__(self):

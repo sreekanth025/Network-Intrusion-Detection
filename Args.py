@@ -9,6 +9,9 @@ class Args:
         self.test_set_size = 0.1
         self.batch_size = 64
         
+        # Hyper parameter in prioritized experience replay
+        self.per_exponent = 2
+        
         self.dataset_size = 125973
         self.num_clients = 2
         
