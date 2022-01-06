@@ -5,7 +5,7 @@ from typing import List, Optional, Tuple
 from Args import args
 
 
-class saveFedAvgModelStrategy(fl.server.strategy.FedAvg):
+class SaveFedAvgModelStrategy(fl.server.strategy.FedAvg):
     def aggregate_fit(
             self, 
             rnd: int, 
@@ -29,7 +29,7 @@ if __name__ == "__main__":
         fraction_eval=1.0,
     )
     
-    save_fedAvg_strategy = saveFedAvgModelStrategy(
+    save_fedAvg_strategy = SaveFedAvgModelStrategy(
         fraction_fit=1.0,
         fraction_eval=1.0
     )
