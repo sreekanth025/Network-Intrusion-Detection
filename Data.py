@@ -5,6 +5,7 @@ from sklearn.feature_selection import SelectFpr
 from sklearn.feature_selection import chi2
 from sklearn.model_selection import train_test_split
 
+from MyUtils import bool_attack, convert_bool
 
 # URL (google drive) of the NSL KDD Dataset (In CSV format)
 download_url = 'https://drive.google.com/uc?id=1dhVPtvCy_F4_qWb2kkaZc6VOqlxW3LVl'
@@ -14,17 +15,7 @@ df = pd.read_csv('data/nsl_kdd.csv')
 # print(df.shape)
 # print(df.head())
 
-def bool_attack(x):
-    if(x != "normal"):
-        return "attack"
-    else:
-        return "normal"
 
-def convert_bool(x):
-    if(x == "attack"):
-        return 1
-    else:
-        return 0
 
 def preprocess(df_x, df_y):
     df_x = pd.get_dummies(df_x, columns = ["protocol_type","service","flag"])

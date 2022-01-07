@@ -81,3 +81,17 @@ def delete_files(path):
     files = glob.glob(path)
     for f in files:
         os.remove(f)
+        
+
+def bool_attack(x):
+    if(x != "normal"):
+        return "attack"
+    else:
+        return "normal"
+
+
+def convert_bool(x):
+    if(x == "attack"):
+        return 1
+    else:
+        return 0

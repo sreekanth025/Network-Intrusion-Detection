@@ -9,9 +9,11 @@ from Server import SaveFedAvgModelStrategy
 from Client import client_logic
 from MyUtils import load_data, delete_files
 from Args import args
+from NslSplitData import get_nsl_splits
 
-from Data import x1, x2, y1, y2
-splits = [(x1, y1), (x2, y2)]
+# from Data import x1, x2, y1, y2
+# splits = [(x1, y1), (x2, y2)]
+splits = get_nsl_splits()
 
 
 def start_server():
@@ -75,4 +77,5 @@ def main():
 if __name__ == "__main__":
     # torch.multiprocessing.set_start_method("spawn")
     delete_files(args.output_folder + '*' + args.file_suffix)
+    delete_files('weights/*.npz')
     main()
