@@ -17,6 +17,9 @@ class Args:
         self.output_folder = 'script_outputs/'
         self.file_suffix = '-output.txt'
         
+        self.fparam_k = 5000
+        self.fparam_a = 850
+        
 args = Args()
 
 # Exports: args
