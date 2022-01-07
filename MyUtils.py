@@ -1,3 +1,5 @@
+import os
+import glob
 import numpy as np
 import torch
 import torch.nn as nn
@@ -73,3 +75,9 @@ def test(net, test_loader):
     loss /= len(test_loader.dataset)
     accuracy = correct / total
     return loss, accuracy
+
+
+def delete_files(path):
+    files = glob.glob(path)
+    for f in files:
+        os.remove(f)

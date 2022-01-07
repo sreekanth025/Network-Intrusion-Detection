@@ -24,7 +24,7 @@ def client_logic(net, train_loaders, test_loader):
         def fit(self, parameters, config):
             self.set_parameters(parameters)
             train_loader = train_loaders[self.split_id]
-            print('Training on data on split id: ' + str(self.split_id))
+            print('Training on data on split id: ' + str(self.split_id), flush=True)
             self.split_id += 1
             
             # train(net, train_loader)
@@ -36,9 +36,9 @@ def client_logic(net, train_loaders, test_loader):
             self.set_parameters(parameters)
             loss, accuracy = test(net, test_loader)
             
-            print('Loss: ' + str(loss))
-            print('Accuracy: ' + str(accuracy))
-            print('')
+            print('Loss: ' + str(loss), flush=True)
+            print('Accuracy: ' + str(accuracy), flush=True)
+            print('', flush=True)
             
             num_examples = len(test_loader.dataset)
             return float(loss), num_examples, {"accuracy": float(accuracy)}

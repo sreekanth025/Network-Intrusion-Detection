@@ -15,7 +15,7 @@ class SaveFedAvgModelStrategy(fl.server.strategy.FedAvg):
         
         weights = super().aggregate_fit(rnd, results, failures)
         if weights is not None:
-            print(f"Saving round {rnd} weights...")
+            print(f"Saving round {rnd} weights...", flush=True)
             np.savez(f"weights/round-{rnd}-weights.npz", *weights)
         
         return weights

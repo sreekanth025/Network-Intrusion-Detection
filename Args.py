@@ -1,7 +1,7 @@
 
 class Args:
     def __init__(self):
-        self.epochs = 1
+        self.epochs = 100
         self.lr = 0.01
         self.n_columns = 33
         self.agent_data_splits = 50
@@ -12,10 +12,10 @@ class Args:
         # Hyper parameter in prioritized experience replay
         self.per_exponent = 2
         
-        # self.dataset_size = 125973
         self.num_clients = 2
         
-        # self.num_federated_rounds = (int((self.dataset_size//self.num_clients)*(1-self.test_set_size)))//self.agent_data_splits
+        self.output_folder = 'script_outputs/'
+        self.file_suffix = '-output.txt'
         
 args = Args()
 

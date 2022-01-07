@@ -2,11 +2,12 @@ import flwr as fl
 import torch
 import time
 from multiprocessing import Process
+import sys
 
 from Net import Net
 from Server import SaveFedAvgModelStrategy
 from Client import client_logic
-from MyUtils import load_data
+from MyUtils import load_data, delete_files
 from Args import args
 
 from Data import x1, x2, y1, y2
@@ -14,6 +15,8 @@ splits = [(x1, y1), (x2, y2)]
 
 
 def start_server():
+    sys.stdout = open(args.output_folder + 'sever' + args.file_suffix, 'w')
+    
     # Define strategy
     save_fedAvg_strategy = SaveFedAvgModelStrategy(
         fraction_fit=1.0,
@@ -26,14 +29,22 @@ def start_server():
         config={"num_rounds": args.agent_data_splits},
         strategy=save_fedAvg_strategy
     )
-
+    
+    sys.stdout.close()
+    
 
 def start_client(client_id):
+    
+    file_name = 'client-' + str(client_id) + args.file_suffix
+    sys.stdout = open(args.output_folder + file_name, 'w')
+    
     x, y = splits[client_id]
     train_loaders, test_loader = load_data(x, y)
     net = Net()
     start_fn = client_logic(net, train_loaders, test_loader)
     start_fn()
+    
+    sys.stdout.close()
     
     
 def main():
@@ -62,5 +73,6 @@ def main():
 
 
 if __name__ == "__main__":
-    torch.multiprocessing.set_start_method("spawn")
+    # torch.multiprocessing.set_start_method("spawn")
+    delete_files(args.output_folder + '*' + args.file_suffix)
     main()
