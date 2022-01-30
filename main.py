@@ -3,21 +3,26 @@ import torch
 import time
 from multiprocessing import Process
 import sys
+from datetime import datetime
 
 from Net import Net
 from Server import SaveFedAvgModelStrategy
 from Client import client_logic
 from MyUtils import load_data, delete_files
 from Args import args
-from NslSplitData import get_nsl_splits
 
-# from Data import x1, x2, y1, y2
-# splits = [(x1, y1), (x2, y2)]
-splits = get_nsl_splits()
+from NslSplitData import get_nsl_splits
+from IsotSplitData import get_isot_splits
+from Data import get_nsl_random_splits, get_isot_random_splits
+ 
+# splits = get_nsl_splits()
+splits = get_isot_splits()
+# splits = get_nsl_random_splits()
+# splits = get_isot_random_splits()
 
 
 def start_server():
-    sys.stdout = open(args.output_folder + 'sever' + args.file_suffix, 'w')
+    sys.stdout = open(args.output_folder + 'server' + args.file_suffix, 'w')
     
     # Define strategy
     save_fedAvg_strategy = SaveFedAvgModelStrategy(
@@ -75,7 +80,10 @@ def main():
 
 
 if __name__ == "__main__":
+    init_time = datetime.now()
     # torch.multiprocessing.set_start_method("spawn")
     delete_files(args.output_folder + '*' + args.file_suffix)
     delete_files('weights/*.npz')
     main()
+    fin_time = datetime.now()
+    print("Total execution time: ", (fin_time-init_time))

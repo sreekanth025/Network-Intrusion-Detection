@@ -1,20 +1,18 @@
 import pandas as pd
+import numpy as np
 
 from sklearn.preprocessing import Normalizer
 from sklearn.feature_selection import SelectFpr
 from sklearn.feature_selection import chi2
 from sklearn.model_selection import train_test_split
+from sklearn.utils import shuffle
 
 from MyUtils import bool_attack, convert_bool
+from Args import args
 
 # URL (google drive) of the NSL KDD Dataset (In CSV format)
-download_url = 'https://drive.google.com/uc?id=1dhVPtvCy_F4_qWb2kkaZc6VOqlxW3LVl'
+# download_url = 'https://drive.google.com/uc?id=1dhVPtvCy_F4_qWb2kkaZc6VOqlxW3LVl'
 # df = pd.read_csv(download_url)
-df = pd.read_csv('data/nsl_kdd.csv')
-
-# print(df.shape)
-# print(df.head())
-
 
 
 def preprocess(df_x, df_y):
@@ -24,19 +22,65 @@ def preprocess(df_x, df_y):
     x_new = SelectFpr(chi2, alpha=0.05).fit_transform(df_x, df_y)
     return x_new
 
-df_x = df.drop('class', axis=1).drop('difficulty_level', axis=1)
-df_y = df['class'].apply(bool_attack).apply(convert_bool)
+    
+def get_nsl_random_splits():
+    df = pd.read_csv('data/nsl/nsl_kdd.csv')
+    df = shuffle(df, random_state=args.random_state)
+    
+    df_x = df.drop('class', axis=1).drop('difficulty_level', axis=1)
+    df_y = df['class'].apply(bool_attack).apply(convert_bool)
+    x_new = preprocess(df_x, df_y)
+    
+    _, n_columns = x_new.shape
+    print('Number of columns in preprocessed dataset: ' + str(n_columns))
+    
+    xs = np.array_split(x_new, args.num_clients)
+    ys = np.array_split(df_y, args.num_clients)
+    
+    splits = []
+    for x, y in zip(xs, ys):
+        splits.append((x, y))
+        
+    return splits
 
-x_new = preprocess(df_x, df_y)
 
-_, n_columns = x_new.shape
-print('Number of columns in preprocessed dataset: ' + str(n_columns))
+# =============================================================================
+# def get_isot_random_splits():
+#     df = pd.read_csv('data/isot/overall.csv', header = None)
+#     df = shuffle(df, random_state=args.random_state)
+#     
+#     x = df.drop(209, axis=1)
+#     y = df[209]
+#     
+#     xs = np.array_split(x, args.num_clients)
+#     ys = np.array_split(y, args.num_clients)
+#     
+#     splits = []
+#     for x, y in zip(xs, ys):
+#         splits.append((x, y))
+#         
+#     return splits
+# =============================================================================
 
-x1, x2, y1, y2 = train_test_split(x_new, df_y, test_size=0.5, random_state=42)
+def get_isot_random_splits():
+    df2 = pd.read_csv('data/isot/s2.csv', header = None)
+    df3 = pd.read_csv('data/isot/s3.csv', header = None)
+    df4 = pd.read_csv('data/isot/s4.csv', header = None)
+    df5 = pd.read_csv('data/isot/s5.csv', header = None)
+    df6 = pd.read_csv('data/isot/s6.csv', header = None)
 
-# print(x1.shape)
-# print(y1.shape)
-# print(x2.shape)
-# print(y2.shape)
+    df = pd.concat([df2, df3, df4, df5, df6])
+    df = shuffle(df)
 
-# Exports: x1, y1, x2, y2
+    x = df.drop(208, axis=1)
+    y = df[208]
+
+    xs = np.array_split(x, args.num_clients)
+    ys = np.array_split(y, args.num_clients)
+
+    splits = []
+    for x, y in zip(xs, ys):
+        splits.append((x, y))
+
+    return splits
+    

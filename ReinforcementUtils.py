@@ -7,6 +7,9 @@ from operator import itemgetter
 from MyUtils import get_tensor_loader
 from Args import args
 
+train_data_x = []
+train_data_y = []
+
 def reinforcement_train(net, train_loader):
     
     criterion = nn.CrossEntropyLoss()
@@ -32,11 +35,14 @@ def reinforcement_train(net, train_loader):
             
             for feature, label in zip(features, labels):
                 memory.append((feature, label))
-
+                # if(epoch == 0):
+                #     train_data_x.append(feature.detach().cpu().numpy())
+                #     train_data_y.append(label.detach().cpu().numpy())
+                
             probability_weights.extend(get_probability_weights(outputs, labels))
         
-        # sample = get_random_sample(memory)
-        sample = get_prioritized_sample(memory, probability_weights)
+        sample = get_random_sample(memory)
+        # sample = get_prioritized_sample(memory, probability_weights)
         
         # Train on the sampled data - Experience replay
         for features, labels in sample:
@@ -46,8 +52,28 @@ def reinforcement_train(net, train_loader):
             loss = criterion(outputs, targets)
             loss.backward()
             optimizer.step()
-        
-        
+      
+    # memory_train(net, optimizer, criterion)
+    
+    
+
+def memory_train(net, optimizer, criterion):
+    x = train_data_x
+    y = train_data_y
+    data_loader = get_tensor_loader(x, y)
+    
+    print('Training on memory, size: ' + str(len(x)), flush=True)
+    for epoch in range(args.re_epochs):
+        for features, labels in data_loader:
+            labels = labels.type(torch.LongTensor)
+            optimizer.zero_grad()
+            outputs = net(features)
+            # print('breakpoint')
+            targets = get_targets(outputs, labels)
+            loss = criterion(outputs, targets)
+            loss.backward()
+            optimizer.step()
+
 def get_targets(outputs, labels):
     targets = []
     for output, label in zip(outputs, labels):
@@ -114,7 +140,7 @@ def get_probability_weights(outputs, labels):
     for output_vector, label in zip(outputs, labels):
         target_vector = get_target_vector(label)
         error_vector = [abs(i-j) for i, j in zip(output_vector, target_vector)]
-        error = sum(error_vector)    
+        error = sum(error_vector)
         weights.append(pow(error, args.per_exponent))
         
     return weights
