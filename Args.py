@@ -33,7 +33,8 @@ class Args:
 #         for isot dataset
 # =============================================================================
         # self.n_columns = 208
-        self.n_columns = 79
+        # self.n_columns = 79
+        self.n_columns = 85
         
         self.fparam_k = 10
         self.fparam_a = 10
