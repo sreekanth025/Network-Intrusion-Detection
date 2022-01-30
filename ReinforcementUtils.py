@@ -30,6 +30,9 @@ def reinforcement_train(net, train_loader):
             # print('breakpoint')
             targets = get_targets(outputs, labels)
             loss = criterion(outputs, targets)
+            
+            # print('In reinforcement train: loss: ' + str(loss.item()))
+            
             loss.backward()
             optimizer.step()
             
@@ -41,8 +44,8 @@ def reinforcement_train(net, train_loader):
                 
             probability_weights.extend(get_probability_weights(outputs, labels))
         
-        sample = get_random_sample(memory)
-        # sample = get_prioritized_sample(memory, probability_weights)
+        # sample = get_random_sample(memory)
+        sample = get_prioritized_sample(memory, probability_weights)
         
         # Train on the sampled data - Experience replay
         for features, labels in sample:

@@ -5,3 +5,4 @@ weights/**.npz
 script_outputs/*-output.txt
 
 data/isot/overall.csv
+data/isot/overall_normalized.csv

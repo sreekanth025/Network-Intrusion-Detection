@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import glob
 
 from sklearn.preprocessing import Normalizer
 from sklearn.feature_selection import SelectFpr
@@ -63,17 +64,19 @@ def get_nsl_random_splits():
 # =============================================================================
 
 def get_isot_random_splits():
-    df2 = pd.read_csv('data/isot/s2.csv', header = None)
-    df3 = pd.read_csv('data/isot/s3.csv', header = None)
-    df4 = pd.read_csv('data/isot/s4.csv', header = None)
-    df5 = pd.read_csv('data/isot/s5.csv', header = None)
-    df6 = pd.read_csv('data/isot/s6.csv', header = None)
+    
+    files = glob.glob('data/isot/overall_normalized/*.csv')
+    lis = []
+    
+    for f in files:
+        df = pd.read_csv(f)
+        lis.append(df)
 
-    df = pd.concat([df2, df3, df4, df5, df6])
+    df = pd.concat(lis)
     df = shuffle(df)
 
-    x = df.drop(208, axis=1)
-    y = df[208]
+    x = df.drop('class', axis=1)
+    y = df['class']
 
     xs = np.array_split(x, args.num_clients)
     ys = np.array_split(y, args.num_clients)

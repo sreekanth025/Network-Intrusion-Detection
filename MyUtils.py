@@ -69,16 +69,16 @@ def test(net, test_loader):
             labels = labels.type(torch.LongTensor)
             outputs = net(features)
             
-            print('outputs: ' + str(outputs))
-            print('labels:  ' + str(labels))
+            # print('In Test: outputs: ' + str(outputs))
+            # print('In Test: labels:  ' + str(labels))
             loss += criterion(outputs, labels).item()
-            print('samples loss: ' + str(loss))
-            print('')
+            # print('In Test: samples loss: ' + str(loss))
+            # print('')
             _, predicted = torch.max(outputs.data, 1)
             total += labels.size(0)
             correct += (predicted == labels).sum().item()
     
-    print('Total loss: ' + str(loss))
+    # print('Total loss: ' + str(loss))
     loss /= len(test_loader.dataset)
     accuracy = correct / total
     return loss, accuracy

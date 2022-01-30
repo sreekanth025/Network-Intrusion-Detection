@@ -16,9 +16,9 @@ from IsotSplitData import get_isot_splits
 from Data import get_nsl_random_splits, get_isot_random_splits
  
 # splits = get_nsl_splits()
-splits = get_isot_splits()
+# splits = get_isot_splits()
 # splits = get_nsl_random_splits()
-# splits = get_isot_random_splits()
+splits = get_isot_random_splits()
 
 
 def start_server():

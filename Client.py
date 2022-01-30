@@ -33,9 +33,9 @@ def client_logic(net, train_loaders, test_loader):
             reinforcement_train(net, train_loader)
             num_examples = len(train_loader.dataset)
             print('Samples in the current round: ' + str(num_examples), flush=True)
-            # return self.get_parameters(), int(num_examples*self.weight_multiplier), {}
             print("Num examples in fit: " + str(num_examples))
-            return self.get_parameters(), num_examples, {}
+            return self.get_parameters(), int(num_examples*self.weight_multiplier), {}
+            # return self.get_parameters(), num_examples, {}
         
         def evaluate(self, parameters, config):
             self.set_parameters(parameters)
@@ -43,15 +43,15 @@ def client_logic(net, train_loaders, test_loader):
             num_examples = len(test_loader.dataset)
             
             print('Current weight multiplier: ' + str(self.weight_multiplier), flush=True)
+            print("Num examples in eval: " + str(num_examples))
             print('Loss: ' + str(loss), flush=True)
             print('Accuracy: ' + str(accuracy), flush=True)
             print('', flush=True)
             
             cur_weight_multiplier = self.weight_multiplier
             self.weight_multiplier = self.accuracy_based_weight_modifer(accuracy)
-            # return float(loss), int(num_examples*cur_weight_multiplier), {"accuracy": float(accuracy)}
-            print("Num examples in eval: " + str(num_examples))
-            return float(loss), num_examples, {"accuracy": float(accuracy)}
+            return float(loss), int(num_examples*cur_weight_multiplier), {"accuracy": float(accuracy)}
+            # return float(loss), num_examples, {"accuracy": float(accuracy)}
         
         def accuracy_based_weight_modifer(self, accuracy):
             # return self.weight_multiplier * function_1(accuracy)
