@@ -1,5 +1,6 @@
 import flwr as fl
 import torch
+import numpy as np
 import time
 from multiprocessing import Process
 import sys
@@ -22,7 +23,7 @@ splits = get_isot_splits()
 
 
 def start_server():
-    sys.stdout = open(args.output_folder + 'server' + args.file_suffix, 'w')
+    sys.stdout = open(args.output_folder + 'server' + args.output_file_suffix, 'w')
     
     # Define strategy
     save_fedAvg_strategy = SaveFedAvgModelStrategy(
@@ -42,16 +43,21 @@ def start_server():
 
 def start_client(client_id):
     
-    file_name = 'client-' + str(client_id) + args.file_suffix
+    file_name = 'client-' + str(client_id) + args.output_file_suffix
     sys.stdout = open(args.output_folder + file_name, 'w')
     
     x, y = splits[client_id]
     train_loaders, test_loader = load_data(x, y)
+    
     net = Net()
-    start_fn = client_logic(net, train_loaders, test_loader)
+    metrics = {"accuracy" : [], "loss" : []}
+    
+    start_fn = client_logic(net, train_loaders, test_loader, metrics)
     start_fn()
     
     sys.stdout.close()
+    metrics_file = 'client-' + str(client_id) + args.metrics_file_suffix
+    np.save(args.output_folder + metrics_file, metrics)
     
     
 def main():
@@ -82,7 +88,8 @@ def main():
 if __name__ == "__main__":
     init_time = datetime.now()
     # torch.multiprocessing.set_start_method("spawn")
-    delete_files(args.output_folder + '*' + args.file_suffix)
+    delete_files(args.output_folder + '*' + args.output_file_suffix)
+    delete_files(args.output_folder + '*' + args.metrics_file_suffix)
     delete_files('weights/*.npz')
     main()
     fin_time = datetime.now()

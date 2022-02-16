@@ -3,6 +3,7 @@
 **/temp.py
 weights/**.npz
 script_outputs/*-output.txt
+script_outputs/*-metrics.npy
 
 data/isot/overall.csv
 data/isot/overall_normalized.csv

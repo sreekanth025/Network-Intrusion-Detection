@@ -6,7 +6,7 @@ from MyUtils import train, test
 from ReinforcementUtils import reinforcement_train
 from Args import args
 
-def client_logic(net, train_loaders, test_loader):
+def client_logic(net, train_loaders, test_loader, metrics):
         
     class CifarClient(fl.client.NumPyClient):
         
@@ -47,6 +47,9 @@ def client_logic(net, train_loaders, test_loader):
             print('Loss: ' + str(loss), flush=True)
             print('Accuracy: ' + str(accuracy), flush=True)
             print('', flush=True)
+            
+            metrics['accuracy'].append(accuracy)
+            metrics['loss'].append(loss)
             
             cur_weight_multiplier = self.weight_multiplier
             self.weight_multiplier = self.accuracy_based_weight_modifer(accuracy)

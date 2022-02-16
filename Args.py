@@ -3,7 +3,7 @@ class Args:
     def __init__(self):
         self.epochs = 100
         self.lr = 0.01
-        self.agent_data_splits = 20
+        self.agent_data_splits = 200
         self.random_state = 42
         self.test_set_size = 0.1
         self.batch_size = 64
@@ -16,7 +16,8 @@ class Args:
         self.num_clients = 5
         
         self.output_folder = 'script_outputs/'
-        self.file_suffix = '-output.txt'
+        self.output_file_suffix = '-output.txt'
+        self.metrics_file_suffix = '-metrics.npy'
         
 # =============================================================================
 #         for nsl dataset:

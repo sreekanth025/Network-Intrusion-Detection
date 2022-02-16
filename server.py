@@ -31,7 +31,10 @@ if __name__ == "__main__":
     
     save_fedAvg_strategy = SaveFedAvgModelStrategy(
         fraction_fit=1.0,
-        fraction_eval=1.0
+        fraction_eval=1.0,
+        min_available_clients = args.num_clients,
+        min_fit_clients = args.num_clients,
+        min_eval_clients = args.num_clients
     )
 
     # Start server
