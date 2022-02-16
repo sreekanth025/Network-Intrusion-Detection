@@ -13,7 +13,8 @@ class Args:
         
         # self.num_clients = 3
         # self.num_clients = 5
-        self.num_clients = 5
+        # self.num_clients = 5
+        self.num_clients = 2
         
         self.output_folder = 'script_outputs/'
         self.output_file_suffix = '-output.txt'
@@ -22,10 +23,13 @@ class Args:
 # =============================================================================
 #         for nsl dataset:
 # =============================================================================
-        # self.n_columns = 33
+        self.n_columns = 33
         
-        # # self.fparam_k = 4500
-        # # self.fparam_a = 500
+        self.fparam_k = 30000
+        self.fparam_a = 200
+        
+        # self.fparam_k = 4500
+        # self.fparam_a = 500
         
         # self.fparam_k = 10
         # self.fparam_a = 10
@@ -33,12 +37,11 @@ class Args:
 # =============================================================================
 #         for isot dataset
 # =============================================================================
-        # self.n_columns = 208
         # self.n_columns = 79
-        self.n_columns = 85
+        # self.n_columns = 85
         
-        self.fparam_k = 10
-        self.fparam_a = 10
+        # self.fparam_k = 30
+        # self.fparam_a = 50
         
         
         # self.prev_multiplier_weight = 0.5

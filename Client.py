@@ -50,6 +50,7 @@ def client_logic(net, train_loaders, test_loader, metrics):
             
             metrics['accuracy'].append(accuracy)
             metrics['loss'].append(loss)
+            metrics['attention_value'].append(self.weight_multiplier)
             
             cur_weight_multiplier = self.weight_multiplier
             self.weight_multiplier = self.accuracy_based_weight_modifer(accuracy)
@@ -57,8 +58,9 @@ def client_logic(net, train_loaders, test_loader, metrics):
             # return float(loss), num_examples, {"accuracy": float(accuracy)}
         
         def accuracy_based_weight_modifer(self, accuracy):
+            return function_1(accuracy)
             # return self.weight_multiplier * function_1(accuracy)
-            return (self.weight_multiplier * function_1(accuracy))/args.multiplier_factor
+            # return (self.weight_multiplier * function_1(accuracy))/args.multiplier_factor
             # return self.weight_multiplier*args.prev_multiplier_weight + function_1(accuracy)
             
         
