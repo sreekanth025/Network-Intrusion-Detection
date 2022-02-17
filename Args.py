@@ -10,6 +10,9 @@ class Args:
         self.output_file_suffix = '-output.txt'
         self.metrics_file_suffix = '-metrics.npy'
         
+        self.nsl_columns = 33
+        self.isot_columns = 85
+        
         self.agent_data_splits = 200
         self.num_clients = 8
         self.fparam_k = 30
@@ -25,9 +28,9 @@ class Args:
 # =============================================================================
         
         if(self.dataset == 'nsl'):
-            self.n_columns = 33            
+            self.n_columns = self.nsl_columns            
         else:
-            self.n_columns = 85
+            self.n_columns = self.isot_columns
             
         
         if(self.data_split_type == 'customized'):

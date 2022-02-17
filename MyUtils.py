@@ -8,7 +8,6 @@ from sklearn.model_selection import train_test_split
 
 from Args import args
 
-
 def load_data(x, y):
     x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=args.test_set_size, 
                                                         random_state=args.random_state)
@@ -66,6 +65,23 @@ def test(net, test_loader):
     loss /= len(test_loader.dataset)
     accuracy = correct / total
     return loss, accuracy
+
+
+def get_predictions(net, data_loader):
+    predictions = []
+    originals = []
+    net.eval()
+    
+    with torch.no_grad():
+        for features, labels in data_loader:
+            outputs = net(features)
+            numpy_arr = outputs.detach().cpu().numpy()
+            predictions.extend(numpy_arr)
+            
+            labels = labels.type(torch.LongTensor)
+            originals.extend(labels.detach().cpu().numpy())
+        
+    return predictions, originals
 
 
 def delete_files(path):
