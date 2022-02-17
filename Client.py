@@ -1,8 +1,9 @@
 import flwr as fl
 import torch
 from collections import OrderedDict
+from datetime import datetime
 
-from MyUtils import train, test
+from MyUtils import test
 from ReinforcementUtils import reinforcement_train
 from Args import args
 
@@ -24,20 +25,24 @@ def client_logic(net, train_loaders, test_loader, metrics):
             net.load_state_dict(state_dict, strict=True)
             
         def fit(self, parameters, config):
+            init_time = datetime.now()
             self.set_parameters(parameters)
             train_loader = train_loaders[self.split_id]
             print('Training on data on split id: ' + str(self.split_id), flush=True)
             self.split_id += 1
             
-            # train(net, train_loader)
             reinforcement_train(net, train_loader)
             num_examples = len(train_loader.dataset)
             print('Samples in the current round: ' + str(num_examples), flush=True)
             print("Num examples in fit: " + str(num_examples))
+            
+            finish_time = datetime.now()
+            print("Time taken for this fit round: ", (finish_time-init_time))
             return self.get_parameters(), int(num_examples*self.weight_multiplier), {}
             # return self.get_parameters(), num_examples, {}
         
         def evaluate(self, parameters, config):
+            init_time = datetime.now()
             self.set_parameters(parameters)
             loss, accuracy = test(net, test_loader)
             num_examples = len(test_loader.dataset)
@@ -46,7 +51,6 @@ def client_logic(net, train_loaders, test_loader, metrics):
             print("Num examples in eval: " + str(num_examples))
             print('Loss: ' + str(loss), flush=True)
             print('Accuracy: ' + str(accuracy), flush=True)
-            print('', flush=True)
             
             metrics['accuracy'].append(accuracy)
             metrics['loss'].append(loss)
@@ -54,18 +58,20 @@ def client_logic(net, train_loaders, test_loader, metrics):
             
             cur_weight_multiplier = self.weight_multiplier
             self.weight_multiplier = self.accuracy_based_weight_modifer(accuracy)
+            
+            finish_time = datetime.now()
+            print("Time taken for this evaluation round: ", (finish_time-init_time))
+            print('', flush=True)
             return float(loss), int(num_examples*cur_weight_multiplier), {"accuracy": float(accuracy)}
             # return float(loss), num_examples, {"accuracy": float(accuracy)}
         
         def accuracy_based_weight_modifer(self, accuracy):
             return function_1(accuracy)
-            # return self.weight_multiplier * function_1(accuracy)
-            # return (self.weight_multiplier * function_1(accuracy))/args.multiplier_factor
-            # return self.weight_multiplier*args.prev_multiplier_weight + function_1(accuracy)
             
         
     def start():
         fl.client.start_numpy_client("localhost:8080", client=CifarClient())
+    
     
     return start
 

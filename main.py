@@ -1,5 +1,4 @@
 import flwr as fl
-import torch
 import numpy as np
 import time
 from multiprocessing import Process
@@ -12,23 +11,40 @@ from Client import client_logic
 from MyUtils import load_data, delete_files
 from Args import args
 
-from NslSplitData import get_nsl_splits
-from IsotSplitData import get_isot_splits
-from Data import get_nsl_random_splits, get_isot_random_splits
- 
-splits = get_nsl_splits()
-# splits = get_isot_splits()
-# splits = get_nsl_random_splits()
-# splits = get_isot_random_splits()
+from Data import get_nsl_random_splits
+from Data import get_isot_random_splits
+from Data import get_nsl_customized_splits
+from Data import get_isot_customized_splits
+
+
+splits = []
+
+if(args.dataset == 'nsl'):
+    if(args.data_split_type == 'random'):
+        splits = get_nsl_random_splits()
+    else:
+        splits = get_nsl_customized_splits()
+else:
+    if(args.data_split_type == 'random'):
+        splits = get_isot_random_splits()
+    else:
+        splits = get_isot_customized_splits()
 
 
 def start_server():
     sys.stdout = open(args.output_folder + 'server' + args.output_file_suffix, 'w')
     
+    print('Datatset: ' + args.dataset)
+    print('Split type: ' + args.data_split_type)
+    print('')
+    
     # Define strategy
     save_fedAvg_strategy = SaveFedAvgModelStrategy(
         fraction_fit=1.0,
-        fraction_eval=1.0
+        fraction_eval=1.0,
+        min_available_clients = args.num_clients,
+        min_fit_clients = args.num_clients,
+        min_eval_clients = args.num_clients
     )
     
     # Start server
@@ -87,10 +103,13 @@ def main():
 
 if __name__ == "__main__":
     init_time = datetime.now()
-    # torch.multiprocessing.set_start_method("spawn")
     delete_files(args.output_folder + '*' + args.output_file_suffix)
     delete_files(args.output_folder + '*' + args.metrics_file_suffix)
-    delete_files('weights/*.npz')
+    delete_files(args.output_folder + 'weights/*.npy')
+
+    print('Datatset: ' + args.dataset)
+    print('Split type: ' + args.data_split_type)
+
     main()
     fin_time = datetime.now()
     print("Total execution time: ", (fin_time-init_time))

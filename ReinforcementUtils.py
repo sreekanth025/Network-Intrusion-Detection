@@ -7,17 +7,12 @@ from operator import itemgetter
 from MyUtils import get_tensor_loader
 from Args import args
 
-train_data_x = []
-train_data_y = []
 
 def reinforcement_train(net, train_loader):
     
     criterion = nn.CrossEntropyLoss()
     optimizer = torch.optim.SGD(net.parameters(), lr=args.lr)
     net.train()
-    
-    # memory = []
-    # probability_weights = []
     
     for epoch in range(args.epochs):
         memory = []
@@ -27,20 +22,13 @@ def reinforcement_train(net, train_loader):
             labels = labels.type(torch.LongTensor)
             optimizer.zero_grad()
             outputs = net(features)
-            # print('breakpoint')
             targets = get_targets(outputs, labels)
             loss = criterion(outputs, targets)
-            
-            # print('In reinforcement train: loss: ' + str(loss.item()))
-            
             loss.backward()
             optimizer.step()
             
             for feature, label in zip(features, labels):
                 memory.append((feature, label))
-                # if(epoch == 0):
-                #     train_data_x.append(feature.detach().cpu().numpy())
-                #     train_data_y.append(label.detach().cpu().numpy())
                 
             probability_weights.extend(get_probability_weights(outputs, labels))
         
@@ -48,34 +36,15 @@ def reinforcement_train(net, train_loader):
         sample = get_prioritized_sample(memory, probability_weights)
         
         # Train on the sampled data - Experience replay
-        for features, labels in sample:
-            optimizer.zero_grad()
-            outputs = net(features)
-            targets = get_targets(outputs, labels)
-            loss = criterion(outputs, targets)
-            loss.backward()
-            optimizer.step()
-      
-    # memory_train(net, optimizer, criterion)
-    
-    
-
-def memory_train(net, optimizer, criterion):
-    x = train_data_x
-    y = train_data_y
-    data_loader = get_tensor_loader(x, y)
-    
-    print('Training on memory, size: ' + str(len(x)), flush=True)
-    for epoch in range(args.re_epochs):
-        for features, labels in data_loader:
-            labels = labels.type(torch.LongTensor)
-            optimizer.zero_grad()
-            outputs = net(features)
-            # print('breakpoint')
-            targets = get_targets(outputs, labels)
-            loss = criterion(outputs, targets)
-            loss.backward()
-            optimizer.step()
+        for epoch in range(args.epochs):
+            for features, labels in sample:
+                optimizer.zero_grad()
+                outputs = net(features)
+                targets = get_targets(outputs, labels)
+                loss = criterion(outputs, targets)
+                loss.backward()
+                optimizer.step()
+                
 
 def get_targets(outputs, labels):
     targets = []
@@ -101,6 +70,7 @@ def get_reward(prediction, label):
         return 1
     else:
         return 0
+
 
 def get_random_sample(memory):
     length = len(memory)
@@ -130,6 +100,7 @@ def get_prioritized_sample(memory, weights):
         labels.append(y.detach().cpu().numpy())
         
     return get_tensor_loader(features, labels)
+
 
 def array_softmax(arr):
     return np.exp(arr) / np.sum(np.exp(arr), axis=0)

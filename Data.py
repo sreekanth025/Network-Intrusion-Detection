@@ -5,15 +5,10 @@ import glob
 from sklearn.preprocessing import Normalizer
 from sklearn.feature_selection import SelectFpr
 from sklearn.feature_selection import chi2
-from sklearn.model_selection import train_test_split
 from sklearn.utils import shuffle
 
 from MyUtils import bool_attack, convert_bool
 from Args import args
-
-# URL (google drive) of the NSL KDD Dataset (In CSV format)
-# download_url = 'https://drive.google.com/uc?id=1dhVPtvCy_F4_qWb2kkaZc6VOqlxW3LVl'
-# df = pd.read_csv(download_url)
 
 
 def preprocess(df_x, df_y):
@@ -33,7 +28,6 @@ def get_nsl_random_splits():
     x_new = preprocess(df_x, df_y)
     
     _, n_columns = x_new.shape
-    print('Number of columns in preprocessed dataset: ' + str(n_columns))
     
     xs = np.array_split(x_new, args.num_clients)
     ys = np.array_split(df_y, args.num_clients)
@@ -45,27 +39,9 @@ def get_nsl_random_splits():
     return splits
 
 
-# =============================================================================
-# def get_isot_random_splits():
-#     df = pd.read_csv('data/isot/overall.csv', header = None)
-#     df = shuffle(df, random_state=args.random_state)
-#     
-#     x = df.drop(209, axis=1)
-#     y = df[209]
-#     
-#     xs = np.array_split(x, args.num_clients)
-#     ys = np.array_split(y, args.num_clients)
-#     
-#     splits = []
-#     for x, y in zip(xs, ys):
-#         splits.append((x, y))
-#         
-#     return splits
-# =============================================================================
-
 def get_isot_random_splits():
     
-    files = glob.glob('data/isot/overall_normalized/*.csv')
+    files = glob.glob('data/isot/day_wise_normalized/*.csv')
     lis = []
     
     for f in files:
@@ -87,3 +63,42 @@ def get_isot_random_splits():
 
     return splits
     
+
+def get_nsl_customized_splits():
+    
+    set_1 = pd.read_csv('data/nsl/nsl-splits/set-1.csv')
+    set_2 = pd.read_csv('data/nsl/nsl-splits/set-2.csv')
+    set_3 = pd.read_csv('data/nsl/nsl-splits/set-3.csv')
+    set_4 = pd.read_csv('data/nsl/nsl-splits/set-4.csv')
+    
+    set_2 = pd.concat([set_2, set_3, set_4])
+    
+    dataframes = [set_1, set_2]
+    splits = []
+    
+    for df in dataframes:
+        df = shuffle(df)
+        x = df.drop('class', axis=1)
+        y = df['class'].apply(bool_attack).apply(convert_bool)
+        splits.append((x, y))
+    
+    return splits
+
+
+def get_isot_customized_splits():
+    
+    files = glob.glob('data/isot/day_wise_normalized/*.csv')    
+    dataframes = []
+    splits = []
+    
+    for file in files:
+        df = pd.read_csv(file)
+        dataframes.append(df)
+    
+    for df in dataframes:
+        df = shuffle(df)
+        x = df.drop('class', axis=1)
+        y = df['class']
+        splits.append((x, y))
+    
+    return splits

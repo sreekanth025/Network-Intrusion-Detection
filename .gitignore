@@ -4,6 +4,8 @@
 weights/**.npz
 script_outputs/*-output.txt
 script_outputs/*-metrics.npy
+script_outputs/weights/*.npy
+script_outputs/weights/*.npz
 
 data/isot/overall.csv
 data/isot/overall_normalized.csv

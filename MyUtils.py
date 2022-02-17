@@ -9,7 +9,6 @@ from sklearn.model_selection import train_test_split
 from Args import args
 
 
-
 def load_data(x, y):
     x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=args.test_set_size, 
                                                         random_state=args.random_state)
@@ -31,7 +30,6 @@ def get_tensor_loader(x, y):
     x = torch.from_numpy(np.asarray(x)).float()
     y = torch.from_numpy(np.asarray(y)).float()
     tensor_dataset = TensorDataset(x, y)
-    # tensor_dataset = tensor_dataset.type(torch.LongTensor)
     tensor_loader = DataLoader(tensor_dataset, batch_size=args.batch_size, shuffle=True)
     return tensor_loader
 
@@ -42,21 +40,13 @@ def train(net, train_loader):
     net.train()
     
     for epoch in range(args.epochs):
-        # print('epoch number: ' + str(epoch))
         for features, labels in train_loader:
-            
             labels = labels.type(torch.LongTensor)
             optimizer.zero_grad()
             outputs = net(features)
-            
-            # print(outputs)
-            # print(labels)
-            
             loss = criterion(outputs, labels)
             loss.backward()
             optimizer.step()
-            
-            
             
             
 def test(net, test_loader):
@@ -68,17 +58,11 @@ def test(net, test_loader):
         for features, labels in test_loader:
             labels = labels.type(torch.LongTensor)
             outputs = net(features)
-            
-            # print('In Test: outputs: ' + str(outputs))
-            # print('In Test: labels:  ' + str(labels))
             loss += criterion(outputs, labels).item()
-            # print('In Test: samples loss: ' + str(loss))
-            # print('')
             _, predicted = torch.max(outputs.data, 1)
             total += labels.size(0)
             correct += (predicted == labels).sum().item()
-    
-    # print('Total loss: ' + str(loss))
+            
     loss /= len(test_loader.dataset)
     accuracy = correct / total
     return loss, accuracy
