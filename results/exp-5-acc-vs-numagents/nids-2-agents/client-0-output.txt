@@ -1,0 +1,2000 @@
+Training on data on split id: 0
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:32.428334
+Current weight multiplier: 1
+Num examples in eval: 6299
+Loss: 0.003339672203593111
+Accuracy: 0.8782346404191141
+Time taken for this evaluation round:  0:00:00.130015
+
+Training on data on split id: 1
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:32.671195
+Current weight multiplier: 1.1176388308077705
+Num examples in eval: 6299
+Loss: 0.0027677151849864494
+Accuracy: 0.9172884584854739
+Time taken for this evaluation round:  0:00:00.104721
+
+Training on data on split id: 2
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.352300
+Current weight multiplier: 1.0685869978166287
+Num examples in eval: 6299
+Loss: 0.004219666730176647
+Accuracy: 0.8726782028893475
+Time taken for this evaluation round:  0:00:00.085670
+
+Training on data on split id: 3
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:33.420712
+Current weight multiplier: 1.1257100284008237
+Num examples in eval: 6299
+Loss: 0.0024694728686196744
+Accuracy: 0.9266550246070805
+Time taken for this evaluation round:  0:00:00.112920
+
+Training on data on split id: 4
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.957206
+Current weight multiplier: 1.0586317059684145
+Num examples in eval: 6299
+Loss: 0.002350429970440476
+Accuracy: 0.9411017621844737
+Time taken for this evaluation round:  0:00:00.112853
+
+Training on data on split id: 5
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.564017
+Current weight multiplier: 1.0444958892951381
+Num examples in eval: 6299
+Loss: 0.002512025752579869
+Accuracy: 0.937450388950627
+Time taken for this evaluation round:  0:00:00.089012
+
+Training on data on split id: 6
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:32.839506
+Current weight multiplier: 1.0479342323639798
+Num examples in eval: 6299
+Loss: 0.0023065114313694274
+Accuracy: 0.943641847912367
+Time taken for this evaluation round:  0:00:00.093727
+
+Training on data on split id: 7
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:30.985440
+Current weight multiplier: 1.0421559426471458
+Num examples in eval: 6299
+Loss: 0.0023273134059703694
+Accuracy: 0.9495157961581203
+Time taken for this evaluation round:  0:00:00.113870
+
+Training on data on split id: 8
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:31.635053
+Current weight multiplier: 1.0369043797056976
+Num examples in eval: 6299
+Loss: 0.00227721520909659
+Accuracy: 0.9515796158120337
+Time taken for this evaluation round:  0:00:00.113229
+
+Training on data on split id: 9
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:30.301886
+Current weight multiplier: 1.0351110859303416
+Num examples in eval: 6299
+Loss: 0.0025353607589890226
+Accuracy: 0.9457056675662804
+Time taken for this evaluation round:  0:00:00.100386
+
+Training on data on split id: 10
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:30.892007
+Current weight multiplier: 1.0402856328409373
+Num examples in eval: 6299
+Loss: 0.0022934029054161027
+Accuracy: 0.9466581997142404
+Time taken for this evaluation round:  0:00:00.113061
+
+Training on data on split id: 11
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:33.113112
+Current weight multiplier: 1.0394316579692298
+Num examples in eval: 6299
+Loss: 0.0024627350562904577
+Accuracy: 0.9353865692967137
+Time taken for this evaluation round:  0:00:00.117691
+
+Training on data on split id: 12
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:33.516777
+Current weight multiplier: 1.0499172132611654
+Num examples in eval: 6299
+Loss: 0.002050279292651615
+Accuracy: 0.9582473408477536
+Time taken for this evaluation round:  0:00:00.112935
+
+Training on data on split id: 13
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:32.715434
+Current weight multiplier: 1.0294965964146048
+Num examples in eval: 6299
+Loss: 0.002040231231068369
+Accuracy: 0.956024765835847
+Time taken for this evaluation round:  0:00:00.112558
+
+Training on data on split id: 14
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:32.462881
+Current weight multiplier: 1.0313380533002985
+Num examples in eval: 6299
+Loss: 0.002182316543940401
+Accuracy: 0.9538021908239404
+Time taken for this evaluation round:  0:00:00.112809
+
+Training on data on split id: 15
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:32.441676
+Current weight multiplier: 1.0332094224723012
+Num examples in eval: 6299
+Loss: 0.002253085024126145
+Accuracy: 0.9565010319098269
+Time taken for this evaluation round:  0:00:00.150418
+
+Training on data on split id: 16
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:34.107788
+Current weight multiplier: 1.0309409502042213
+Num examples in eval: 6299
+Loss: 0.002568149505971746
+Accuracy: 0.9395142086045404
+Time taken for this evaluation round:  0:00:00.112799
+
+Training on data on split id: 17
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:35.278097
+Current weight multiplier: 1.0459799148831188
+Num examples in eval: 6299
+Loss: 0.0019956630171007687
+Accuracy: 0.9580885854897603
+Time taken for this evaluation round:  0:00:00.129653
+
+Training on data on split id: 18
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:36.584714
+Current weight multiplier: 1.0296271451362007
+Num examples in eval: 6299
+Loss: 0.001874827868097414
+Accuracy: 0.9601524051436736
+Time taken for this evaluation round:  0:00:00.126661
+
+Training on data on split id: 19
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:33.527295
+Current weight multiplier: 1.0279417261498092
+Num examples in eval: 6299
+Loss: 0.0019047050106253845
+Accuracy: 0.9553897444038736
+Time taken for this evaluation round:  0:00:00.112699
+
+Training on data on split id: 20
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:33.528293
+Current weight multiplier: 1.0318696613087541
+Num examples in eval: 6299
+Loss: 0.0018453345987262716
+Accuracy: 0.960787426575647
+Time taken for this evaluation round:  0:00:00.117686
+
+Training on data on split id: 21
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:31.685224
+Current weight multiplier: 1.0274282172892668
+Num examples in eval: 6299
+Loss: 0.0018990995792060226
+Accuracy: 0.952690903317987
+Time taken for this evaluation round:  0:00:00.112699
+
+Training on data on split id: 22
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:31.782305
+Current weight multiplier: 1.0341564433696284
+Num examples in eval: 6299
+Loss: 0.0018647071191454656
+Accuracy: 0.9547547229719003
+Time taken for this evaluation round:  0:00:00.121622
+
+Training on data on split id: 23
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:30.117575
+Current weight multiplier: 1.0324037199825467
+Num examples in eval: 6299
+Loss: 0.0018117324335127714
+Accuracy: 0.9572948086997937
+Time taken for this evaluation round:  0:00:00.107292
+
+Training on data on split id: 24
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.838462
+Current weight multiplier: 1.030282153815614
+Num examples in eval: 6299
+Loss: 0.001872135491417474
+Accuracy: 0.9623749801555802
+Time taken for this evaluation round:  0:00:00.097021
+
+Training on data on split id: 25
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:30.199734
+Current weight multiplier: 1.026154821966603
+Num examples in eval: 6299
+Loss: 0.0020199178440511406
+Accuracy: 0.9552309890458803
+Time taken for this evaluation round:  0:00:00.103045
+
+Training on data on split id: 26
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:31.486904
+Current weight multiplier: 1.032002945880081
+Num examples in eval: 6299
+Loss: 0.001861446301844181
+Accuracy: 0.9596761390696936
+Time taken for this evaluation round:  0:00:00.110805
+
+Training on data on split id: 27
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:30.772878
+Current weight multiplier: 1.0283284223574871
+Num examples in eval: 6299
+Loss: 0.0018612493410917062
+Accuracy: 0.9444356247023337
+Time taken for this evaluation round:  0:00:00.097202
+
+Training on data on split id: 28
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.342650
+Current weight multiplier: 1.041433335184402
+Num examples in eval: 6299
+Loss: 0.001804604399094725
+Accuracy: 0.9618987140816002
+Time taken for this evaluation round:  0:00:00.112716
+
+Training on data on split id: 29
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.187110
+Current weight multiplier: 1.0265352892252624
+Num examples in eval: 6299
+Loss: 0.001889040823455159
+Accuracy: 0.9471344657882204
+Time taken for this evaluation round:  0:00:00.102553
+
+Training on data on split id: 30
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.506013
+Current weight multiplier: 1.0390068457043
+Num examples in eval: 6299
+Loss: 0.001820381104196229
+Accuracy: 0.9614224480076202
+Time taken for this evaluation round:  0:00:00.112765
+
+Training on data on split id: 31
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.286259
+Current weight multiplier: 1.0269170845885052
+Num examples in eval: 6299
+Loss: 0.0017227859736484825
+Accuracy: 0.9655500873154469
+Time taken for this evaluation round:  0:00:00.097098
+
+Training on data on split id: 32
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.321648
+Current weight multiplier: 1.023652047591019
+Num examples in eval: 6299
+Loss: 0.001813712482968859
+Accuracy: 0.952690903317987
+Time taken for this evaluation round:  0:00:00.121840
+
+Training on data on split id: 33
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.287325
+Current weight multiplier: 1.0341564433696284
+Num examples in eval: 6299
+Loss: 0.0016502926425080125
+Accuracy: 0.9642800444515003
+Time taken for this evaluation round:  0:00:00.108307
+
+Training on data on split id: 34
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.832246
+Current weight multiplier: 1.024646161681773
+Num examples in eval: 6299
+Loss: 0.0016194904584731539
+Accuracy: 0.9557072551198603
+Time taken for this evaluation round:  0:00:00.097008
+
+Training on data on split id: 35
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.465335
+Current weight multiplier: 1.0316035515266124
+Num examples in eval: 6299
+Loss: 0.0016310859134751647
+Accuracy: 0.9644387998094935
+Time taken for this evaluation round:  0:00:00.091221
+
+Training on data on split id: 36
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.460176
+Current weight multiplier: 1.0245213893334169
+Num examples in eval: 6299
+Loss: 0.002019597544194517
+Accuracy: 0.9426893157644071
+Time taken for this evaluation round:  0:00:00.112765
+
+Training on data on split id: 37
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.757021
+Current weight multiplier: 1.0430284772926222
+Num examples in eval: 6299
+Loss: 0.0017165613590909253
+Accuracy: 0.961263692649627
+Time taken for this evaluation round:  0:00:00.110704
+
+Training on data on split id: 38
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:31.537875
+Current weight multiplier: 1.0270446454711502
+Num examples in eval: 6299
+Loss: 0.0015586634863071602
+Accuracy: 0.9669788855373869
+Time taken for this evaluation round:  0:00:00.103723
+
+Training on data on split id: 39
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:30.643014
+Current weight multiplier: 1.0225447207337734
+Num examples in eval: 6299
+Loss: 0.0016484334094975937
+Accuracy: 0.9636450230195269
+Time taken for this evaluation round:  0:00:00.109707
+
+Training on data on split id: 40
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:31.801910
+Current weight multiplier: 1.0251467080531045
+Num examples in eval: 6299
+Loss: 0.001887704583884686
+Accuracy: 0.952690903317987
+Time taken for this evaluation round:  0:00:00.104721
+
+Training on data on split id: 41
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:32.582822
+Current weight multiplier: 1.0341564433696284
+Num examples in eval: 6299
+Loss: 0.0018329569313791673
+Accuracy: 0.9538021908239404
+Time taken for this evaluation round:  0:00:00.105719
+
+Training on data on split id: 42
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:31.686223
+Current weight multiplier: 1.0332094224723012
+Num examples in eval: 6299
+Loss: 0.0021452429583276957
+Accuracy: 0.962216224797587
+Time taken for this evaluation round:  0:00:00.150594
+
+Training on data on split id: 43
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:30.510367
+Current weight multiplier: 1.0262814970427097
+Num examples in eval: 6299
+Loss: 0.0015780649384935237
+Accuracy: 0.961263692649627
+Time taken for this evaluation round:  0:00:00.106716
+
+Training on data on split id: 44
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.932912
+Current weight multiplier: 1.0270446454711502
+Num examples in eval: 6299
+Loss: 0.001741805478604015
+Accuracy: 0.9614224480076202
+Time taken for this evaluation round:  0:00:00.105722
+
+Training on data on split id: 45
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.725467
+Current weight multiplier: 1.0269170845885052
+Num examples in eval: 6299
+Loss: 0.0016124604890398902
+Accuracy: 0.9666613748214002
+Time taken for this evaluation round:  0:00:00.110704
+
+Training on data on split id: 46
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.810241
+Current weight multiplier: 1.022789786725845
+Num examples in eval: 6299
+Loss: 0.0017323588991159484
+Accuracy: 0.9595173837117003
+Time taken for this evaluation round:  0:00:00.106715
+
+Training on data on split id: 47
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.718486
+Current weight multiplier: 1.0284576198283863
+Num examples in eval: 6299
+Loss: 0.0015416572168812446
+Accuracy: 0.9628512462295602
+Time taken for this evaluation round:  0:00:00.107712
+
+Training on data on split id: 48
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:30.922266
+Current weight multiplier: 1.0257756791910715
+Num examples in eval: 6299
+Loss: 0.0019629797498292062
+Accuracy: 0.9585648515637403
+Time taken for this evaluation round:  0:00:00.107711
+
+Training on data on split id: 49
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:31.639346
+Current weight multiplier: 1.0292359508898394
+Num examples in eval: 6299
+Loss: 0.0016088906239708144
+Accuracy: 0.9585648515637403
+Time taken for this evaluation round:  0:00:00.109707
+
+Training on data on split id: 50
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:30.844506
+Current weight multiplier: 1.0292359508898394
+Num examples in eval: 6299
+Loss: 0.0017244925935091641
+Accuracy: 0.9601524051436736
+Time taken for this evaluation round:  0:00:00.102726
+
+Training on data on split id: 51
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:30.267018
+Current weight multiplier: 1.0279417261498092
+Num examples in eval: 6299
+Loss: 0.0016357555598373035
+Accuracy: 0.962216224797587
+Time taken for this evaluation round:  0:00:00.102727
+
+Training on data on split id: 52
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.664631
+Current weight multiplier: 1.0262814970427097
+Num examples in eval: 6299
+Loss: 0.0016985484691649311
+Accuracy: 0.9657088426734403
+Time taken for this evaluation round:  0:00:00.107712
+
+Training on data on split id: 53
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.541959
+Current weight multiplier: 1.0235284349984128
+Num examples in eval: 6299
+Loss: 0.0018216451231681803
+Accuracy: 0.9599936497856802
+Time taken for this evaluation round:  0:00:00.106715
+
+Training on data on split id: 54
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:30.031648
+Current weight multiplier: 1.028070475653927
+Num examples in eval: 6299
+Loss: 0.0015023184937557582
+Accuracy: 0.9671376408953802
+Time taken for this evaluation round:  0:00:00.107713
+
+Training on data on split id: 55
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.411308
+Current weight multiplier: 1.0224224027914863
+Num examples in eval: 6299
+Loss: 0.001467816224716489
+Accuracy: 0.9677726623273536
+Time taken for this evaluation round:  0:00:00.106716
+
+Training on data on split id: 56
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.484113
+Current weight multiplier: 1.0219345616640463
+Num examples in eval: 6299
+Loss: 0.0015308178763820063
+Accuracy: 0.9690427051913002
+Time taken for this evaluation round:  0:00:00.108710
+
+Training on data on split id: 57
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.448210
+Current weight multiplier: 1.020965719384653
+Num examples in eval: 6299
+Loss: 0.0015296818851740952
+Accuracy: 0.9687251944753136
+Time taken for this evaluation round:  0:00:00.111702
+
+Training on data on split id: 58
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.533980
+Current weight multiplier: 1.0212070775579187
+Num examples in eval: 6299
+Loss: 0.0013831076492407735
+Accuracy: 0.9661851087474203
+Time taken for this evaluation round:  0:00:00.105717
+
+Training on data on split id: 59
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.855120
+Current weight multiplier: 1.0231584629473984
+Num examples in eval: 6299
+Loss: 0.001500338423969959
+Accuracy: 0.9696777266232736
+Time taken for this evaluation round:  0:00:00.108709
+
+Training on data on split id: 60
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.611772
+Current weight multiplier: 1.0204847016108756
+Num examples in eval: 6299
+Loss: 0.0013184323408635746
+Accuracy: 0.9699952373392602
+Time taken for this evaluation round:  0:00:00.106715
+
+Training on data on split id: 61
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.544951
+Current weight multiplier: 1.0202450399428364
+Num examples in eval: 6299
+Loss: 0.0020104084671925203
+Accuracy: 0.9407842514684871
+Time taken for this evaluation round:  0:00:00.104721
+
+Training on data on split id: 62
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.695548
+Current weight multiplier: 1.044791360541895
+Num examples in eval: 6299
+Loss: 0.001345194770035942
+Accuracy: 0.9704715034132402
+Time taken for this evaluation round:  0:00:00.110703
+
+Training on data on split id: 63
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:32.420257
+Current weight multiplier: 1.0198866035634309
+Num examples in eval: 6299
+Loss: 0.0014859520945391081
+Accuracy: 0.9712652802032069
+Time taken for this evaluation round:  0:00:00.106715
+
+Training on data on split id: 64
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:31.069869
+Current weight multiplier: 1.0192920173541824
+Num examples in eval: 6299
+Loss: 0.0013705130669747123
+Accuracy: 0.9672963962533736
+Time taken for this evaluation round:  0:00:00.106715
+
+Training on data on split id: 65
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.564898
+Current weight multiplier: 1.022300228043975
+Num examples in eval: 6299
+Loss: 0.002152069728891894
+Accuracy: 0.943641847912367
+Time taken for this evaluation round:  0:00:00.114694
+
+Training on data on split id: 66
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.946875
+Current weight multiplier: 1.0421559426471458
+Num examples in eval: 6299
+Loss: 0.0015971811917338567
+Accuracy: 0.9618987140816002
+Time taken for this evaluation round:  0:00:00.103723
+
+Training on data on split id: 67
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.612769
+Current weight multiplier: 1.0265352892252624
+Num examples in eval: 6299
+Loss: 0.0015519128201296071
+Accuracy: 0.955072233687887
+Time taken for this evaluation round:  0:00:00.105717
+
+Training on data on split id: 68
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.867089
+Current weight multiplier: 1.0321363837567763
+Num examples in eval: 6299
+Loss: 0.0015388836439241774
+Accuracy: 0.9671376408953802
+Time taken for this evaluation round:  0:00:00.109707
+
+Training on data on split id: 69
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.569885
+Current weight multiplier: 1.0224224027914863
+Num examples in eval: 6299
+Loss: 0.00141815423041672
+Accuracy: 0.9717415462771869
+Time taken for this evaluation round:  0:00:00.110704
+
+Training on data on split id: 70
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.690560
+Current weight multiplier: 1.018936944640924
+Num examples in eval: 6299
+Loss: 0.0016301402137284336
+Accuracy: 0.9636450230195269
+Time taken for this evaluation round:  0:00:00.104721
+
+Training on data on split id: 71
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.456187
+Current weight multiplier: 1.0251467080531045
+Num examples in eval: 6299
+Loss: 0.0015761199662916376
+Accuracy: 0.9668201301793935
+Time taken for this evaluation round:  0:00:00.106715
+
+Training on data on split id: 72
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.702527
+Current weight multiplier: 1.0226671820016022
+Num examples in eval: 6299
+Loss: 0.0015532359647044002
+Accuracy: 0.9641212890935069
+Time taken for this evaluation round:  0:00:00.109707
+
+Training on data on split id: 73
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.729457
+Current weight multiplier: 1.0247710795951575
+Num examples in eval: 6299
+Loss: 0.0013632974883825047
+Accuracy: 0.9704715034132402
+Time taken for this evaluation round:  0:00:00.120678
+
+Training on data on split id: 74
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.614764
+Current weight multiplier: 1.0198866035634309
+Num examples in eval: 6299
+Loss: 0.0014411721768599595
+Accuracy: 0.9712652802032069
+Time taken for this evaluation round:  0:00:00.105719
+
+Training on data on split id: 75
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.535973
+Current weight multiplier: 1.0192920173541824
+Num examples in eval: 6299
+Loss: 0.0015405431544462315
+Accuracy: 0.9693602159072868
+Time taken for this evaluation round:  0:00:00.107712
+
+Training on data on split id: 76
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.728460
+Current weight multiplier: 1.020724927747176
+Num examples in eval: 6299
+Loss: 0.0014228488281732925
+Accuracy: 0.9639625337355135
+Time taken for this evaluation round:  0:00:00.105717
+
+Training on data on split id: 77
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.578860
+Current weight multiplier: 1.0248961432062782
+Num examples in eval: 6299
+Loss: 0.0016015700863668072
+Accuracy: 0.9647563105254803
+Time taken for this evaluation round:  0:00:00.102726
+
+Training on data on split id: 78
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.744417
+Current weight multiplier: 1.0242722808014992
+Num examples in eval: 6299
+Loss: 0.001449887419697876
+Accuracy: 0.9742816320050802
+Time taken for this evaluation round:  0:00:00.104722
+
+Training on data on split id: 79
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.612769
+Current weight multiplier: 1.0170643359408371
+Num examples in eval: 6299
+Loss: 0.0015704821454277397
+Accuracy: 0.9720590569931735
+Time taken for this evaluation round:  0:00:00.104720
+
+Training on data on split id: 80
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.679591
+Current weight multiplier: 1.0187009269559413
+Num examples in eval: 6299
+Loss: 0.0017439469175094186
+Accuracy: 0.9628512462295602
+Time taken for this evaluation round:  0:00:00.106714
+
+Training on data on split id: 81
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.593820
+Current weight multiplier: 1.0257756791910715
+Num examples in eval: 6299
+Loss: 0.001494612606651259
+Accuracy: 0.9707890141292269
+Time taken for this evaluation round:  0:00:00.103723
+
+Training on data on split id: 82
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.534978
+Current weight multiplier: 1.0196483485581436
+Num examples in eval: 6299
+Loss: 0.0014329480889896033
+Accuracy: 0.9699952373392602
+Time taken for this evaluation round:  0:00:00.105718
+
+Training on data on split id: 83
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.513036
+Current weight multiplier: 1.0202450399428364
+Num examples in eval: 6299
+Loss: 0.001280661780581737
+Accuracy: 0.9765042070169868
+Time taken for this evaluation round:  0:00:00.108710
+
+Training on data on split id: 84
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.622742
+Current weight multiplier: 1.0154546795663775
+Num examples in eval: 6299
+Loss: 0.0012443983963001557
+Accuracy: 0.9728528337831401
+Time taken for this evaluation round:  0:00:00.100732
+
+Training on data on split id: 85
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:29.669617
+Current weight multiplier: 1.0181133164071436
+Num examples in eval: 6299
+Loss: 0.0014542360751780088
+Accuracy: 0.9709477694872202
+Time taken for this evaluation round:  0:00:00.106714
+
+Training on data on split id: 86
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:30.134902
+Current weight multiplier: 1.0195294314445111
+Num examples in eval: 6299
+Loss: 0.001351164363515076
+Accuracy: 0.9753929195110335
+Time taken for this evaluation round:  0:00:00.114694
+
+Training on data on split id: 87
+Samples in the current round: 284
+Num examples in fit: 284
+Time taken for this fit round:  0:00:31.606499
+Current weight multiplier: 1.0162561624971969
+Num examples in eval: 6299
+Loss: 0.0012994883874743813
+Accuracy: 0.9776154945229402
+Time taken for this evaluation round:  0:00:00.113696
+
+Training on data on split id: 88
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.545934
+Current weight multiplier: 1.014659844310238
+Num examples in eval: 6299
+Loss: 0.001916282820966987
+Accuracy: 0.955548499761867
+Time taken for this evaluation round:  0:00:00.105718
+
+Training on data on split id: 89
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.382385
+Current weight multiplier: 1.031736529903869
+Num examples in eval: 6299
+Loss: 0.0014578332282646552
+Accuracy: 0.9663438641054135
+Time taken for this evaluation round:  0:00:00.109707
+
+Training on data on split id: 90
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.615762
+Current weight multiplier: 1.023035427067602
+Num examples in eval: 6299
+Loss: 0.0015136797943911414
+Accuracy: 0.9658675980314335
+Time taken for this evaluation round:  0:00:00.110704
+
+Training on data on split id: 91
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.338503
+Current weight multiplier: 1.0234049667813399
+Num examples in eval: 6299
+Loss: 0.0012780825823823713
+Accuracy: 0.9695189712652802
+Time taken for this evaluation round:  0:00:00.105718
+
+Training on data on split id: 92
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.660641
+Current weight multiplier: 1.0206047440559756
+Num examples in eval: 6299
+Loss: 0.0016363727031661526
+Accuracy: 0.960311160501667
+Time taken for this evaluation round:  0:00:00.103723
+
+Training on data on split id: 93
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.818746
+Current weight multiplier: 1.02781312569668
+Num examples in eval: 6299
+Loss: 0.0014831087767727736
+Accuracy: 0.9680901730433402
+Time taken for this evaluation round:  0:00:00.103723
+
+Training on data on split id: 94
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:30.722799
+Current weight multiplier: 1.0216914976587532
+Num examples in eval: 6299
+Loss: 0.0012485920425337668
+Accuracy: 0.9717415462771869
+Time taken for this evaluation round:  0:00:00.111702
+
+Training on data on split id: 95
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.874070
+Current weight multiplier: 1.018936944640924
+Num examples in eval: 6299
+Loss: 0.0017282326298716012
+Accuracy: 0.9620574694395936
+Time taken for this evaluation round:  0:00:00.106715
+
+Training on data on split id: 96
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.616757
+Current weight multiplier: 1.0264083194175535
+Num examples in eval: 6299
+Loss: 0.001397233501246433
+Accuracy: 0.9738053659311001
+Time taken for this evaluation round:  0:00:00.106715
+
+Training on data on split id: 97
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.482118
+Current weight multiplier: 1.0174127547725995
+Num examples in eval: 6299
+Loss: 0.0015879409418904577
+Accuracy: 0.9714240355612002
+Time taken for this evaluation round:  0:00:00.107712
+
+Training on data on split id: 98
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.599803
+Current weight multiplier: 1.019173520121367
+Num examples in eval: 6299
+Loss: 0.0014438454768777008
+Accuracy: 0.9714240355612002
+Time taken for this evaluation round:  0:00:00.112699
+
+Training on data on split id: 99
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.535974
+Current weight multiplier: 1.019173520121367
+Num examples in eval: 6299
+Loss: 0.0017159962679189544
+Accuracy: 0.9650738212414669
+Time taken for this evaluation round:  0:00:00.108710
+
+Training on data on split id: 100
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.562903
+Current weight multiplier: 1.024023752939911
+Num examples in eval: 6299
+Loss: 0.0017404451243361158
+Accuracy: 0.9668201301793935
+Time taken for this evaluation round:  0:00:00.105717
+
+Training on data on split id: 101
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.436240
+Current weight multiplier: 1.0226671820016022
+Num examples in eval: 6299
+Loss: 0.0014085112469145742
+Accuracy: 0.9685664391173202
+Time taken for this evaluation round:  0:00:00.112699
+
+Training on data on split id: 102
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.508050
+Current weight multiplier: 1.0213279694192523
+Num examples in eval: 6299
+Loss: 0.0012633245254113174
+Accuracy: 0.9752341641530402
+Time taken for this evaluation round:  0:00:00.108709
+
+Training on data on split id: 103
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.674603
+Current weight multiplier: 1.016371205220833
+Num examples in eval: 6299
+Loss: 0.001467172420301415
+Accuracy: 0.9692014605492936
+Time taken for this evaluation round:  0:00:00.110704
+
+Training on data on split id: 104
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.882048
+Current weight multiplier: 1.020845252813644
+Num examples in eval: 6299
+Loss: 0.0014138439959108802
+Accuracy: 0.9699952373392602
+Time taken for this evaluation round:  0:00:00.108710
+
+Training on data on split id: 105
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.331521
+Current weight multiplier: 1.0202450399428364
+Num examples in eval: 6299
+Loss: 0.0013994948164037834
+Accuracy: 0.9704715034132402
+Time taken for this evaluation round:  0:00:00.106715
+
+Training on data on split id: 106
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.515031
+Current weight multiplier: 1.0198866035634309
+Num examples in eval: 6299
+Loss: 0.001461831885543011
+Accuracy: 0.9679314176853469
+Time taken for this evaluation round:  0:00:00.109707
+
+Training on data on split id: 107
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.278663
+Current weight multiplier: 1.0218129583901232
+Num examples in eval: 6299
+Loss: 0.001937804120819135
+Accuracy: 0.9645975551674869
+Time taken for this evaluation round:  0:00:00.110704
+
+Training on data on split id: 108
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.674603
+Current weight multiplier: 1.0243967624174892
+Num examples in eval: 6299
+Loss: 0.0014367953925623431
+Accuracy: 0.9690427051913002
+Time taken for this evaluation round:  0:00:00.107712
+
+Training on data on split id: 109
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.516028
+Current weight multiplier: 1.020965719384653
+Num examples in eval: 6299
+Loss: 0.0015466619010320976
+Accuracy: 0.9687251944753136
+Time taken for this evaluation round:  0:00:00.123670
+
+Training on data on split id: 110
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.705520
+Current weight multiplier: 1.0212070775579187
+Num examples in eval: 6299
+Loss: 0.0013187327794050541
+Accuracy: 0.9688839498333068
+Time taken for this evaluation round:  0:00:00.106715
+
+Training on data on split id: 111
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.273676
+Current weight multiplier: 1.021086327589583
+Num examples in eval: 6299
+Loss: 0.0014647684314491201
+Accuracy: 0.9688839498333068
+Time taken for this evaluation round:  0:00:00.105719
+
+Training on data on split id: 112
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.706518
+Current weight multiplier: 1.021086327589583
+Num examples in eval: 6299
+Loss: 0.0013927863524160105
+Accuracy: 0.9706302587712335
+Time taken for this evaluation round:  0:00:00.107712
+
+Training on data on split id: 113
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.535974
+Current weight multiplier: 1.0197674058883426
+Num examples in eval: 6299
+Loss: 0.0012664942979838643
+Accuracy: 0.9734878552151135
+Time taken for this evaluation round:  0:00:00.108710
+
+Training on data on split id: 114
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.476134
+Current weight multiplier: 1.017645722775273
+Num examples in eval: 6299
+Loss: 0.0013561839396602712
+Accuracy: 0.9719003016351802
+Time taken for this evaluation round:  0:00:00.102726
+
+Training on data on split id: 115
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.376401
+Current weight multiplier: 1.018818866137807
+Num examples in eval: 6299
+Loss: 0.0014536187047108353
+Accuracy: 0.9738053659311001
+Time taken for this evaluation round:  0:00:00.105718
+
+Training on data on split id: 116
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.620747
+Current weight multiplier: 1.0174127547725995
+Num examples in eval: 6299
+Loss: 0.0014441334606985295
+Accuracy: 0.9663438641054135
+Time taken for this evaluation round:  0:00:00.109707
+
+Training on data on split id: 117
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.332519
+Current weight multiplier: 1.023035427067602
+Num examples in eval: 6299
+Loss: 0.0012698328626082045
+Accuracy: 0.9741228766470869
+Time taken for this evaluation round:  0:00:00.104721
+
+Training on data on split id: 118
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.383383
+Current weight multiplier: 1.017180337963401
+Num examples in eval: 6299
+Loss: 0.0013076782931892607
+Accuracy: 0.9711065248452135
+Time taken for this evaluation round:  0:00:00.106715
+
+Training on data on split id: 119
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.563900
+Current weight multiplier: 1.019410654419228
+Num examples in eval: 6299
+Loss: 0.0016641987292259025
+Accuracy: 0.9615812033656136
+Time taken for this evaluation round:  0:00:00.105717
+
+Training on data on split id: 120
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.497079
+Current weight multiplier: 1.0267896716763356
+Num examples in eval: 6299
+Loss: 0.0014333700962869738
+Accuracy: 0.9717415462771869
+Time taken for this evaluation round:  0:00:00.110705
+
+Training on data on split id: 121
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.079197
+Current weight multiplier: 1.018936944640924
+Num examples in eval: 6299
+Loss: 0.00129961166980319
+Accuracy: 0.9739641212890935
+Time taken for this evaluation round:  0:00:00.104720
+
+Training on data on split id: 122
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.448210
+Current weight multiplier: 1.0172964775319455
+Num examples in eval: 6299
+Loss: 0.0014481829839505303
+Accuracy: 0.9723765677091601
+Time taken for this evaluation round:  0:00:00.109706
+
+Training on data on split id: 123
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.336508
+Current weight multiplier: 1.0184654660461374
+Num examples in eval: 6299
+Loss: 0.001281813329970161
+Accuracy: 0.9738053659311001
+Time taken for this evaluation round:  0:00:00.106716
+
+Training on data on split id: 124
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.425271
+Current weight multiplier: 1.0174127547725995
+Num examples in eval: 6299
+Loss: 0.0014722105797991135
+Accuracy: 0.9687251944753136
+Time taken for this evaluation round:  0:00:00.104721
+
+Training on data on split id: 125
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.381389
+Current weight multiplier: 1.0212070775579187
+Num examples in eval: 6299
+Loss: 0.0015260664973710193
+Accuracy: 0.9647563105254803
+Time taken for this evaluation round:  0:00:00.107712
+
+Training on data on split id: 126
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.743420
+Current weight multiplier: 1.0242722808014992
+Num examples in eval: 6299
+Loss: 0.0018671399921564417
+Accuracy: 0.9587236069217336
+Time taken for this evaluation round:  0:00:00.113697
+
+Training on data on split id: 127
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.286642
+Current weight multiplier: 1.0291058538132085
+Num examples in eval: 6299
+Loss: 0.0015233122434063144
+Accuracy: 0.9693602159072868
+Time taken for this evaluation round:  0:00:00.104720
+
+Training on data on split id: 128
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.321548
+Current weight multiplier: 1.020724927747176
+Num examples in eval: 6299
+Loss: 0.001301991546434587
+Accuracy: 0.9684076837593268
+Time taken for this evaluation round:  0:00:00.107712
+
+Training on data on split id: 129
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.225804
+Current weight multiplier: 1.021449003303282
+Num examples in eval: 6299
+Loss: 0.001520822055319658
+Accuracy: 0.9692014605492936
+Time taken for this evaluation round:  0:00:00.102726
+
+Training on data on split id: 130
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.432252
+Current weight multiplier: 1.020845252813644
+Num examples in eval: 6299
+Loss: 0.0015085796058843433
+Accuracy: 0.9706302587712335
+Time taken for this evaluation round:  0:00:00.109707
+
+Training on data on split id: 131
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.171948
+Current weight multiplier: 1.0197674058883426
+Num examples in eval: 6299
+Loss: 0.0013519473797339336
+Accuracy: 0.9738053659311001
+Time taken for this evaluation round:  0:00:00.104720
+
+Training on data on split id: 132
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.560908
+Current weight multiplier: 1.0174127547725995
+Num examples in eval: 6299
+Loss: 0.0014458657049040654
+Accuracy: 0.9739641212890935
+Time taken for this evaluation round:  0:00:00.118683
+
+Training on data on split id: 133
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.315564
+Current weight multiplier: 1.0172964775319455
+Num examples in eval: 6299
+Loss: 0.0015042636677023106
+Accuracy: 0.9725353230671535
+Time taken for this evaluation round:  0:00:00.109706
+
+Training on data on split id: 134
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.570882
+Current weight multiplier: 1.0183479440635472
+Num examples in eval: 6299
+Loss: 0.0016104413974444096
+Accuracy: 0.962216224797587
+Time taken for this evaluation round:  0:00:00.109707
+
+Training on data on split id: 135
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.237772
+Current weight multiplier: 1.0262814970427097
+Num examples in eval: 6299
+Loss: 0.0013003508934943658
+Accuracy: 0.9755516748690268
+Time taken for this evaluation round:  0:00:00.107713
+
+Training on data on split id: 136
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.247746
+Current weight multiplier: 1.0161412563142271
+Num examples in eval: 6299
+Loss: 0.001288607107445238
+Accuracy: 0.9777742498809335
+Time taken for this evaluation round:  0:00:00.112698
+
+Training on data on split id: 137
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.256722
+Current weight multiplier: 1.0145468365972434
+Num examples in eval: 6299
+Loss: 0.0014433052170809383
+Accuracy: 0.9741228766470869
+Time taken for this evaluation round:  0:00:00.108710
+
+Training on data on split id: 138
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.095154
+Current weight multiplier: 1.017180337963401
+Num examples in eval: 6299
+Loss: 0.0014107801885969355
+Accuracy: 0.9693602159072868
+Time taken for this evaluation round:  0:00:00.105718
+
+Training on data on split id: 139
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.410311
+Current weight multiplier: 1.020724927747176
+Num examples in eval: 6299
+Loss: 0.0016554426410724707
+Accuracy: 0.9682489284013336
+Time taken for this evaluation round:  0:00:00.109708
+
+Training on data on split id: 140
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.328530
+Current weight multiplier: 1.021570179339812
+Num examples in eval: 6299
+Loss: 0.0014330208299917812
+Accuracy: 0.9752341641530402
+Time taken for this evaluation round:  0:00:00.107713
+
+Training on data on split id: 141
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.463170
+Current weight multiplier: 1.016371205220833
+Num examples in eval: 6299
+Loss: 0.0012974223593058597
+Accuracy: 0.9707890141292269
+Time taken for this evaluation round:  0:00:00.107712
+
+Training on data on split id: 142
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.326536
+Current weight multiplier: 1.0196483485581436
+Num examples in eval: 6299
+Loss: 0.001272941505696709
+Accuracy: 0.9753929195110335
+Time taken for this evaluation round:  0:00:00.114693
+
+Training on data on split id: 143
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.481121
+Current weight multiplier: 1.0162561624971969
+Num examples in eval: 6299
+Loss: 0.0015652743803201488
+Accuracy: 0.9679314176853469
+Time taken for this evaluation round:  0:00:00.104720
+
+Training on data on split id: 144
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.340498
+Current weight multiplier: 1.0218129583901232
+Num examples in eval: 6299
+Loss: 0.0013417881010252533
+Accuracy: 0.9744403873630735
+Time taken for this evaluation round:  0:00:00.105718
+
+Training on data on split id: 145
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.540962
+Current weight multiplier: 1.0169484713382277
+Num examples in eval: 6299
+Loss: 0.0016414165355774935
+Accuracy: 0.9630100015875536
+Time taken for this evaluation round:  0:00:00.107712
+
+Training on data on split id: 146
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.323542
+Current weight multiplier: 1.025649591970827
+Num examples in eval: 6299
+Loss: 0.0015446930637446816
+Accuracy: 0.9661851087474203
+Time taken for this evaluation round:  0:00:00.101729
+
+Training on data on split id: 147
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.555922
+Current weight multiplier: 1.0231584629473984
+Num examples in eval: 6299
+Loss: 0.0013978615313946401
+Accuracy: 0.9719003016351802
+Time taken for this evaluation round:  0:00:00.106714
+
+Training on data on split id: 148
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.454194
+Current weight multiplier: 1.018818866137807
+Num examples in eval: 6299
+Loss: 0.001403583979414775
+Accuracy: 0.9745991427210668
+Time taken for this evaluation round:  0:00:00.107712
+
+Training on data on split id: 149
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.648671
+Current weight multiplier: 1.0168327440296505
+Num examples in eval: 6299
+Loss: 0.0013737720049974472
+Accuracy: 0.9749166534370535
+Time taken for this evaluation round:  0:00:00.106714
+
+Training on data on split id: 150
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.513036
+Current weight multiplier: 1.0166017007914199
+Num examples in eval: 6299
+Loss: 0.001449708699187816
+Accuracy: 0.9658675980314335
+Time taken for this evaluation round:  0:00:00.110704
+
+Training on data on split id: 151
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.472144
+Current weight multiplier: 1.0234049667813399
+Num examples in eval: 6299
+Loss: 0.0017566054455899287
+Accuracy: 0.9639625337355135
+Time taken for this evaluation round:  0:00:00.105717
+
+Training on data on split id: 152
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.402333
+Current weight multiplier: 1.0248961432062782
+Num examples in eval: 6299
+Loss: 0.0015119613862547218
+Accuracy: 0.9749166534370535
+Time taken for this evaluation round:  0:00:00.106715
+
+Training on data on split id: 153
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.607782
+Current weight multiplier: 1.0166017007914199
+Num examples in eval: 6299
+Loss: 0.0014383607980317493
+Accuracy: 0.9684076837593268
+Time taken for this evaluation round:  0:00:00.106715
+
+Training on data on split id: 154
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.456948
+Current weight multiplier: 1.021449003303282
+Num examples in eval: 6299
+Loss: 0.0013748208163765938
+Accuracy: 0.9723765677091601
+Time taken for this evaluation round:  0:00:00.112645
+
+Training on data on split id: 155
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:30.853629
+Current weight multiplier: 1.0184654660461374
+Num examples in eval: 6299
+Loss: 0.001591894301614093
+Accuracy: 0.9711065248452135
+Time taken for this evaluation round:  0:00:00.112772
+
+Training on data on split id: 156
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:30.683949
+Current weight multiplier: 1.019410654419228
+Num examples in eval: 6299
+Loss: 0.0013991334654811008
+Accuracy: 0.9780917605969202
+Time taken for this evaluation round:  0:00:00.112720
+
+Training on data on split id: 157
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.365235
+Current weight multiplier: 1.0143212250678568
+Num examples in eval: 6299
+Loss: 0.0013490680219721777
+Accuracy: 0.9723765677091601
+Time taken for this evaluation round:  0:00:00.097029
+
+Training on data on split id: 158
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.074623
+Current weight multiplier: 1.0184654660461374
+Num examples in eval: 6299
+Loss: 0.0014014659707608497
+Accuracy: 0.9757104302270202
+Time taken for this evaluation round:  0:00:00.093727
+
+Training on data on split id: 159
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.325216
+Current weight multiplier: 1.0160264865467232
+Num examples in eval: 6299
+Loss: 0.0013048111373574313
+Accuracy: 0.9707890141292269
+Time taken for this evaluation round:  0:00:00.112661
+
+Training on data on split id: 160
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:28.959951
+Current weight multiplier: 1.0196483485581436
+Num examples in eval: 6299
+Loss: 0.001383291847702541
+Accuracy: 0.9703127480552468
+Time taken for this evaluation round:  0:00:00.112630
+
+Training on data on split id: 161
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.325974
+Current weight multiplier: 1.0200059417118363
+Num examples in eval: 6299
+Loss: 0.001317895337295217
+Accuracy: 0.9714240355612002
+Time taken for this evaluation round:  0:00:00.097012
+
+Training on data on split id: 162
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.064136
+Current weight multiplier: 1.019173520121367
+Num examples in eval: 6299
+Loss: 0.0014960431741249834
+Accuracy: 0.9730115891411335
+Time taken for this evaluation round:  0:00:00.097048
+
+Training on data on split id: 163
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.191840
+Current weight multiplier: 1.0179962104793046
+Num examples in eval: 6299
+Loss: 0.001379660288426995
+Accuracy: 0.9699952373392602
+Time taken for this evaluation round:  0:00:00.096976
+
+Training on data on split id: 164
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.038105
+Current weight multiplier: 1.0202450399428364
+Num examples in eval: 6299
+Loss: 0.001316001980974596
+Accuracy: 0.9741228766470869
+Time taken for this evaluation round:  0:00:00.097138
+
+Training on data on split id: 165
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.279976
+Current weight multiplier: 1.017180337963401
+Num examples in eval: 6299
+Loss: 0.0015329199163430947
+Accuracy: 0.9679314176853469
+Time taken for this evaluation round:  0:00:00.112783
+
+Training on data on split id: 166
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:28.938859
+Current weight multiplier: 1.0218129583901232
+Num examples in eval: 6299
+Loss: 0.0012844561209308096
+Accuracy: 0.9744403873630735
+Time taken for this evaluation round:  0:00:00.112661
+
+Training on data on split id: 167
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.091513
+Current weight multiplier: 1.0169484713382277
+Num examples in eval: 6299
+Loss: 0.0013255279855044172
+Accuracy: 0.9763454516589934
+Time taken for this evaluation round:  0:00:00.098586
+
+Training on data on split id: 168
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:28.813197
+Current weight multiplier: 1.0155687691309596
+Num examples in eval: 6299
+Loss: 0.0016502518464781872
+Accuracy: 0.9688839498333068
+Time taken for this evaluation round:  0:00:00.112676
+
+Training on data on split id: 169
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.193953
+Current weight multiplier: 1.021086327589583
+Num examples in eval: 6299
+Loss: 0.0013970079619185663
+Accuracy: 0.9758691855850135
+Time taken for this evaluation round:  0:00:00.112585
+
+Training on data on split id: 170
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:28.968680
+Current weight multiplier: 1.015911853069588
+Num examples in eval: 6299
+Loss: 0.001298302298645038
+Accuracy: 0.9741228766470869
+Time taken for this evaluation round:  0:00:00.112669
+
+Training on data on split id: 171
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.066663
+Current weight multiplier: 1.017180337963401
+Num examples in eval: 6299
+Loss: 0.0014364465992471342
+Accuracy: 0.9722178123511669
+Time taken for this evaluation round:  0:00:00.112666
+
+Training on data on split id: 172
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:28.878229
+Current weight multiplier: 1.0185831269678443
+Num examples in eval: 6299
+Loss: 0.0014707909660479804
+Accuracy: 0.9665026194634069
+Time taken for this evaluation round:  0:00:00.097030
+
+Training on data on split id: 173
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.005763
+Current weight multiplier: 1.0229125350374826
+Num examples in eval: 6299
+Loss: 0.0013806550394618597
+Accuracy: 0.9684076837593268
+Time taken for this evaluation round:  0:00:00.097034
+
+Training on data on split id: 174
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:28.945746
+Current weight multiplier: 1.021449003303282
+Num examples in eval: 6299
+Loss: 0.0014103345917370735
+Accuracy: 0.9750754087950468
+Time taken for this evaluation round:  0:00:00.097337
+
+Training on data on split id: 175
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:28.935610
+Current weight multiplier: 1.0164863846104384
+Num examples in eval: 6299
+Loss: 0.0014404144021590033
+Accuracy: 0.9660263533894269
+Time taken for this evaluation round:  0:00:00.112663
+
+Training on data on split id: 176
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.000302
+Current weight multiplier: 1.0232816428081744
+Num examples in eval: 6299
+Loss: 0.0014109681735229522
+Accuracy: 0.9715827909191935
+Time taken for this evaluation round:  0:00:00.112711
+
+Training on data on split id: 177
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.018767
+Current weight multiplier: 1.0190551625928799
+Num examples in eval: 6299
+Loss: 0.001303285826625964
+Accuracy: 0.9733290998571201
+Time taken for this evaluation round:  0:00:00.093727
+
+Training on data on split id: 178
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:28.817101
+Current weight multiplier: 1.0177624137900696
+Num examples in eval: 6299
+Loss: 0.0014871710294737566
+Accuracy: 0.9726940784251469
+Time taken for this evaluation round:  0:00:00.093727
+
+Training on data on split id: 179
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.064963
+Current weight multiplier: 1.018230560892904
+Num examples in eval: 6299
+Loss: 0.0013960885548005171
+Accuracy: 0.9715827909191935
+Time taken for this evaluation round:  0:00:00.112559
+
+Training on data on split id: 180
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.064594
+Current weight multiplier: 1.0190551625928799
+Num examples in eval: 6299
+Loss: 0.0015454353197047654
+Accuracy: 0.9658675980314335
+Time taken for this evaluation round:  0:00:00.112650
+
+Training on data on split id: 181
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.097734
+Current weight multiplier: 1.0234049667813399
+Num examples in eval: 6299
+Loss: 0.0014297584688152268
+Accuracy: 0.9687251944753136
+Time taken for this evaluation round:  0:00:00.097019
+
+Training on data on split id: 182
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:30.226594
+Current weight multiplier: 1.0212070775579187
+Num examples in eval: 6299
+Loss: 0.0013484441204927122
+Accuracy: 0.9712652802032069
+Time taken for this evaluation round:  0:00:00.097097
+
+Training on data on split id: 183
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.378487
+Current weight multiplier: 1.0192920173541824
+Num examples in eval: 6299
+Loss: 0.0013935099969316256
+Accuracy: 0.9671376408953802
+Time taken for this evaluation round:  0:00:00.097016
+
+Training on data on split id: 184
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.287249
+Current weight multiplier: 1.0224224027914863
+Num examples in eval: 6299
+Loss: 0.00121742846617754
+Accuracy: 0.9760279409430068
+Time taken for this evaluation round:  0:00:00.109350
+
+Training on data on split id: 185
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.336103
+Current weight multiplier: 1.0157973557578266
+Num examples in eval: 6299
+Loss: 0.0017394853774608979
+Accuracy: 0.954595967613907
+Time taken for this evaluation round:  0:00:00.112808
+
+Training on data on split id: 186
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.183862
+Current weight multiplier: 1.032537618610043
+Num examples in eval: 6299
+Loss: 0.0012867351641327291
+Accuracy: 0.9719003016351802
+Time taken for this evaluation round:  0:00:00.111655
+
+Training on data on split id: 187
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.184530
+Current weight multiplier: 1.018818866137807
+Num examples in eval: 6299
+Loss: 0.0014119876576296289
+Accuracy: 0.9734878552151135
+Time taken for this evaluation round:  0:00:00.112717
+
+Training on data on split id: 188
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.092503
+Current weight multiplier: 1.017645722775273
+Num examples in eval: 6299
+Loss: 0.00200216493951587
+Accuracy: 0.9668201301793935
+Time taken for this evaluation round:  0:00:00.097286
+
+Training on data on split id: 189
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.197886
+Current weight multiplier: 1.0226671820016022
+Num examples in eval: 6299
+Loss: 0.0013422084709676433
+Accuracy: 0.9755516748690268
+Time taken for this evaluation round:  0:00:00.113243
+
+Training on data on split id: 190
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.154167
+Current weight multiplier: 1.0161412563142271
+Num examples in eval: 6299
+Loss: 0.0016774003513191078
+Accuracy: 0.9699952373392602
+Time taken for this evaluation round:  0:00:00.097178
+
+Training on data on split id: 191
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.052260
+Current weight multiplier: 1.0202450399428364
+Num examples in eval: 6299
+Loss: 0.0014248053490190605
+Accuracy: 0.9749166534370535
+Time taken for this evaluation round:  0:00:00.112612
+
+Training on data on split id: 192
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.252650
+Current weight multiplier: 1.0166017007914199
+Num examples in eval: 6299
+Loss: 0.001427757318948067
+Accuracy: 0.9757104302270202
+Time taken for this evaluation round:  0:00:00.093727
+
+Training on data on split id: 193
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.147497
+Current weight multiplier: 1.0160264865467232
+Num examples in eval: 6299
+Loss: 0.0014679671607574188
+Accuracy: 0.9660263533894269
+Time taken for this evaluation round:  0:00:00.112701
+
+Training on data on split id: 194
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.216699
+Current weight multiplier: 1.0232816428081744
+Num examples in eval: 6299
+Loss: 0.0012983949804700147
+Accuracy: 0.9774567391649468
+Time taken for this evaluation round:  0:00:00.097586
+
+Training on data on split id: 195
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.328650
+Current weight multiplier: 1.0147729868204232
+Num examples in eval: 6299
+Loss: 0.0015109225616801148
+Accuracy: 0.9720590569931735
+Time taken for this evaluation round:  0:00:00.109348
+
+Training on data on split id: 196
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.474794
+Current weight multiplier: 1.0187009269559413
+Num examples in eval: 6299
+Loss: 0.0012871457315871385
+Accuracy: 0.9776154945229402
+Time taken for this evaluation round:  0:00:00.113907
+
+Training on data on split id: 197
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.072897
+Current weight multiplier: 1.014659844310238
+Num examples in eval: 6299
+Loss: 0.0015311413792031903
+Accuracy: 0.9704715034132402
+Time taken for this evaluation round:  0:00:00.096973
+
+Training on data on split id: 198
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.329716
+Current weight multiplier: 1.0198866035634309
+Num examples in eval: 6299
+Loss: 0.0015455724136700733
+Accuracy: 0.9734878552151135
+Time taken for this evaluation round:  0:00:00.112666
+
+Training on data on split id: 199
+Samples in the current round: 283
+Num examples in fit: 283
+Time taken for this fit round:  0:00:29.216180
+Current weight multiplier: 1.017645722775273
+Num examples in eval: 6299
+Loss: 0.0013419746643499753
+Accuracy: 0.9738053659311001
+Time taken for this evaluation round:  0:00:00.112680
+

@@ -13,6 +13,7 @@ class Metrics:
         self.tpr = -1
         self.recall = -1
         self.precision = -1
+        self.f1_score = -1
         
         self.compute_all_metrics()
         
@@ -28,10 +29,12 @@ class Metrics:
             if (self.y_hat[i] == 0) and (self.y_actual[i] != self.y_hat[i]):
                 self.FN += 1
         
-        self.compute_accuracy(self.TP, self.FP, self.TN, self.FN)
-        self.compute_fpr(self.TP, self.FP, self.TN, self.FN)
-        self.compute_tpr(self.TP, self.FP, self.TN, self.FN)
-        self.compute_precision(self.TP, self.FP, self.TN, self.FN)
+        acc = self.compute_accuracy(self.TP, self.FP, self.TN, self.FN)
+        fpr = self.compute_fpr(self.TP, self.FP, self.TN, self.FN)
+        recall = self.compute_tpr(self.TP, self.FP, self.TN, self.FN)
+        prec = self.compute_precision(self.TP, self.FP, self.TN, self.FN)
+        
+        self.f1_score = (2*prec*recall)/(prec+recall)
         
     
     def get_all_metrics(self):
