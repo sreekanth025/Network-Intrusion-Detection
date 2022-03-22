@@ -21,10 +21,10 @@ class Args:
 # =============================================================================
 #         Training Specifications
 # =============================================================================
-        # self.dataset = 'isot'
-        self.dataset = 'nsl'
-        self.data_split_type = 'random'
-        # self.data_split_type = 'customized'
+        self.dataset = 'isot'
+        # self.dataset = 'nsl'
+        # self.data_split_type = 'random'
+        self.data_split_type = 'customized'
 # =============================================================================
         
         if(self.dataset == 'nsl'):
